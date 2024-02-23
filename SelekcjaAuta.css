@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+*,
+ *::before,
+  *::after{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior:smooth;
+}
+body{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+.banner{
+    display: flex;
+    height: 90vh;
+    background: url(images/mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+}
+.one{
+    width:100%;
+	height:10vh;
+    top:0;
+	display:flex;
+	justify-content: space-between;
+	background:#1f2020;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+}
+.one .two{
+    position: fixed;
+}
+nav{
+    display:flex;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{ /* Nav bar text */
+    text-decoration: none;
+    color:#d9d9d9;
+    font-size: 0.85rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    white-space: nowrap;
+    margin: 0 2vh;
+    
+}
+nav ul li a:hover{
+    color:#00aeae;
+
+}
+nav ul li div{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    margin: 0 2vh;
+}
+.User{
+    position: absolute;
+    align-items: center;
+}
+.boxuser{ /* Ikona profilu */
+    position: sticky;
+    width: 5vh;
+    height: 5vh;
+    background: #d9d9d9;
+    border-radius:100%;
+}
+.User .boxuser{
+    display: flex;
+}
+.two{ /* gray Bar above image */
+    position: sticky;
+    left:0;
+    top: 0;
+    width:100%;
+	height:10vh;
+	display:flex;
+	background:#1f2020;
+    z-index: 2;
+}
+.navbar2{
+    display: flex;
+    margin:auto;
+}
+.navbar2 ul{
+    display: flex;
+}
+.navbar2 ul li a{
+    text-decoration: none;
+    color: #d9d9d9;
+    position: relative;    
+}
+.navbar2 ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #00aeae;
+    height: 2px;
+    width: 100%;
+    left:0;
+    bottom: -2px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+.navbar2 ul li a:hover{
+    color:#d9d9d9;
+}
+.navbar2 ul li a:hover::after{
+    transform: scaleX(1);
+}
+.okno{
+    width: 95%;
+    height: 40%;
+    max-width: 1920px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 120px;
+    margin: 0 28px;
+    margin-top: 10vh;
+    left: 20px;
+    top: 45%;
+    position: absolute;
+}
+h2{
+    position: relative;
+    top:-70px;
+}
+.Okno2 {
+    position: absolute;
+    left: 59.385vw;
+    top: 50vh;
+    padding: 10px 0px;
+    width: 40%;
+    height: 49.99vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+h3{
+    position: absolute;
+    left: 3%;
+}
+
+.tytul{
+    text-align: left;
+    color:#00aeae;
+}
+.OdKiedy {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 21vh;
+    left: 32vw;
+}
+.GodzinaOdbioru {
+   color: #d9d9d9;
+   position: absolute;
+   left: 27vw;
+}
+.DoKiedy {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 21vh;
+    left: 46vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+.GodzinaZwrotu {
+    position: absolute;
+    color: #d9d9d9;
+    left: 41vw;
+}
+.Gdzie {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 21vh;
+    left: 15vw;
+}
+.MiejsceZwrotu {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 21vh;
+    left: 55vw;
+    pointer-events: none;
+    opacity: 0;
+}
+.MiejsceOdbioru {
+    color: #d9d9d9;
+    left: 7vw;
+    position: absolute;
+}
+.Rozdziałka {
+    color: #d9d9d9;
+    position: absolute;
+    left: 14vw;
+    opacity: 100;
+}
+.słowoZwrot {
+    color: #d9d9d9;
+    position: absolute;
+    left: 14.7vw;
+}
+.słowoMiejsce {
+    color: #d9d9d9;
+    left: 7vw;
+    position: absolute;
+}
+input[type="datetime-local"]{
+    background-color: #00aeae00;
+    padding: 17px;
+    border-radius: 12px;
+    border: 2px solid;
+    font-size: 1rem;
+    color: #00aeae;
+    width: 12%;
+    height: 15%;
+    border-color: #00aeae;
+    z-index: 2;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+select {
+    background-color: #00aeae00;
+    padding: 17px;
+    border-radius: 12px;
+    border: 2px solid;
+    font-size: 1rem;
+    color: #00aeae;
+    width: 18%;
+    height: 15%;
+    border-color: #00aeae;
+    z-index: 2;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+}
+select option {
+    background-color: #1f2020;
+    cursor: pointer;
+}
+.select2 {
+    pointer-events: none;
+}
+input[type="datetime-local"]::-webkit-inner-spin-button,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator{
+    margin-right: 1vw;
+    position: absolute;
+    color: #00aeae;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    text-align: end;
+}
+button {
+    transition: all 0.5s ease-in;
+    background-color: #1f202068;
+    border:2px solid #00aeae;
+    color: #00aeae;
+    padding: 0.83% 3.1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 12px;
+    position: absolute;
+    top: 75%;
+    right:2vw;
+    z-index: 9999;
+}
+button:hover{
+    color:rgba(255, 255, 255, 1);
+    background-color: #00aeae;
+    background-position: -100% 100%;
+}
+.checkbox {
+    color:#d9d9d9;
+    position: absolute;
+    top:81.2vh;
+    left: 9.3vw;
+    text-align: end;
+    float: right;
+}

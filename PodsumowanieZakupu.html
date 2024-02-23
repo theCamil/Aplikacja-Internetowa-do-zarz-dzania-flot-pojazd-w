@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar</title>
+    <link rel="stylesheet" href="PodsumowanieZakupu.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+        <nav>
+            <ul>
+                <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Bell"><i class="fa-solid fa-bell"></i></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Language">PL</a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="two">
+        <nav class="navbar2"> <!-- Przesunąć cały do góry?? -->
+            <ul>
+                <li>
+                    <a href="StronaGłównaRezerwacji.html"><p>1.Rezerwacja</p></a>
+                    <a href="StronaRezerwacji.html"><p>2.Pojazd</p></a>
+                    <a href="WybórUbezpieczenia.html"><p>3.Ubezpieczenie</p></a>
+                    <a href="WybórWyposażenia.html"><p>4.Wyposażenie</p></a>
+                    <a href="TwojeDane.html"><p>5.Twoje dane</p></a>
+                    <a href="PodsumowanieZakupu.html"><p class="platnosc">6.Płatność</p></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <Section class="banner-podsumowanie-zakupu" id="banner">
+        <div class="okno-podsumowanie-zakupu">
+            <h2><a class="tytul-podsumowanie-zakupu">Dokonaj</a> Płatności</h2>
+            <div class="widoki-podsumowanie-zakupu">
+                <div class="okno-kod-podsumowanie-zakupu">
+                    <div class="tytul-sale-podsumowanie-zakupu">
+                        <b class="sale-podsumowanie-zakupu">Posiadasz kod promocyjny? Wprowadź go!</b>
+                        <div class="SaleCode-podsumowanie-zakupu" id="inputCode">
+                            <label for="Code">Wpisz kod rabatowy</label>
+                            <input type="text"
+                                    id="Code"
+                                    name="Code"
+                                    placeholder="Kod promocyjny"/>
+                        </div>
+                    </div>
+                    <div class="btn-zastosuj-podsumowanie-zakupu">
+                        <button type="button" class="zastosuj-podsumowanie-zakupu" id="#">Zastosuj</button>
+                    </div>
+                </div>
+                <div class="okno-podsumowanie-podsumowanie-zakupu">
+                    <b class="podsumowanie-podsumowanie-zakupu">Podsumowanie rezerwacji</b>
+                    <div class="gora-podsumowanie-zakupu">
+                        <div class="elements-podsumowanie-zakupu">
+                            <div class="suma-koncowa-podsumowanie-zakupu">
+                                <a class="sum-all-podsumowanie-zakupu">Suma:<b class="kwota-podsumowanie-zakupu"> 689,99<sup> Eur</sup></b></a>
+                                <i class="fa-solid fa-cart-shopping" style="color: #000;"></i>
+                            </div>
+                            <img class="car-podsumowanie-zakupu" src="images/kia_ceed.png">
+                            <div class="linia-podsumowanie-zakupu"></div>
+                            <table class="date-podsumowanie-zakupu">
+                                <tr><td><b>Miejsce odbioru:</b></td></tr>
+                                <tr><td><i class="fa-solid fa-arrow-right-long" style="color: #00aeae;"></i></td><td>Gdzie: Katowice Airport</td><td>Dzień: 12.02.2024</td><td>Godzina: 12:00</td></tr>
+                                <tr><td class="width-podsumowanie-zakupu"></td></tr>
+                                <tr><td><b>Miejsce zdania:</b></td></tr>
+                                <tr><td><i class="fa-solid fa-arrow-right-long" style="color: #00aeae;"></i></td><td>Katowice Airport</td><td>16.02.2024</td><td>08:00</td></tr>
+                            </table>
+                            <div class="linia-podsumowanie-zakupu"></div>
+                            <table class="carinfo-podsumowanie-zakupu">
+                                <tr><td><b>Pojazd:</b></td></tr>
+                                <td><td><i class="fa-solid fa-arrow-right-long" style="color: #00aeae;"></i></td><td>Kia Ceed lub podobny</td><td>Kompakt</td></tr>
+                            </table>
+                            <div class="suma-car-podsumowanie-zakupu">
+                                <a class="sum-podsumowanie-zakupu">Suma:<b> 689,99<sup> Eur</sup></b></a>
+                            </div>
+                            <div class="linia-podsumowanie-zakupu"></div>
+                            <table class="oc-podsumowanie-zakupu">
+                                <tr><td><b>Ubezpieczenie:</b></td></tr>
+                                <td><td><i class="fa-solid fa-arrow-right-long" style="color: #00aeae;"></i></td><td>Podstawowa ochrona</td><td>(Kwota udziału własnego: 900<sup>Eur</sup>)</td></tr>
+                            </table>
+                            <div class="suma-oc-podsumowanie-zakupu">
+                                <a class="sumoc-podsumowanie-zakupu">Suma:<b> 0,00<sup> Eur</sup></b></a>
+                            </div>
+                            <div class="linia-podsumowanie-zakupu"></div>
+                            <table class="equipment-podsumowanie-zakupu">
+                                <tr><td><b>Wyposażenie:</b></td></tr>
+                                <td><td><i class="fa-solid fa-arrow-right-long" style="color: #00aeae;"></i></td><td>Brak</td></tr>
+                            </table>
+                            <div class="suma-equipment-podsumowanie-zakupu">
+                                <a class="sumequip-podsumowanie-zakupu">Suma:<b> 0,00<sup> Eur</sup></b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-podsumowanie-zakupu">
+                <div>
+                    <b class="payment-options-podsumowanie-zakupu">Wybierz jak chcesz zapłacić</b>
+                    <div class="okno1-podsumowanie-zakupu">
+                        <a class="przelew-podsumowanie-zakupu">Dokonaj płatnośći przelewem bankowym teraz</a>
+                        <table class="dane-przelew-podsumowanie-zakupu">
+                            <tr><td>Nr konta bankowego: <a class="potrzebne-dane-podsumowanie-zakupu"> 11 1100 1011 0000 0000 1111 1111</a></td></tr>
+                            <tr><td>Tytuł:<a class="potrzebne-dane-podsumowanie-zakupu"> Nr umowy najmu</a></td></tr>
+                            <tr><td>Nazwa i adres odbiorcy:</td></tr>
+                            <tr><td><a class="potrzebne-dane-podsumowanie-zakupu"> Flexicar Rent Sp. z o. o.</a></td></tr></td>
+                            <tr><td><a class="potrzebne-dane-podsumowanie-zakupu"> Prusa 49, 02-864 Warszawa</a></td></tr>
+                        </table>
+                        <input type="radio" name="choose" class="opcja1-podsumowanie-zakupu" id="opcja1"><label class="wybierz1-podsumowanie-zakupu" for="opcja1">Zapłać teraz</label>
+                    </div>
+                    <div class="okno2-podsumowanie-zakupu">
+                        <a class="karta-podsumowanie-zakupu">Płatność przy odbiorze pojazdu kartą</a>
+                        <i class="fa-regular fa-credit-card" style="color: #000;"></i>
+                        <input type="radio" name="choose" class="opcja2-podsumowanie-zakupu" id="opcja2"><label class="wybierz2-podsumowanie-zakupu" for="opcja2">Zapłać później</label>
+                    </div>
+                    <div class="okno3-podsumowanie-zakupu">
+                        <a class="gotowka-podsumowanie-zakupu">Płatność przy odbiorze gotówką</a>
+                        <i class="fa-solid fa-money-bill" style="color: #000;"></i>
+                        <input type="radio" name="choose" class="opcja3-podsumowanie-zakupu" id="opcja3"><label class="wybierz3-podsumowanie-zakupu" for="opcja3">Zapłać później</label>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter-podsumowanie-zakupu">   
+                <b class="your-data-podsumowanie-zakupu">Twoje dane</b>
+                <div class="all-data-podsumowanie-zakupu">
+                    <div class="newsletter-data-podsumowanie-zakupu Name" id="inputName">
+                        <label for="Company">Imie</label>
+                        <input type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Wprowadź imie"/>
+                    </div>
+                    <div class="newsletter-data-podsumowanie-zakupu Surname" id="inputSurname">
+                        <label for="Surname">Nazwisko</label>
+                        <input type="text"
+                                id="Surname"
+                                name="Surname"
+                                placeholder="Wprowadź nazwisko"/>
+                    </div>
+                    <div class="newsletter-data-podsumowanie-zakupu Nr" id="inputNr">
+                        <label for="Nr">Numer telefonu</label>
+                        <input type="text"
+                                id="Nr"
+                                name="Nr"
+                                placeholder="Wprowadź numer"/>
+                    </div>
+                    <div class="newsletter-data-podsumowanie-zakupu mail" id="inputMail">
+                        <label for="mail">E-mail</label>
+                        <input type="text"
+                                id="mail"
+                                name="mail"
+                                placeholder="Wprowadź e-mail"/>
+                    </div>
+                </div>
+                <table>
+                    <tr><td><input class="input-podsumowanie-zakupu" type="checkbox" id="toggleCheckbox" /></td><td class="h1-podsumowanie-zakupu">Zapisz się do naszego newslettera i otrzymuj atrakcyjne oferty bezpośrednio na skrzynkę mailową.</td>
+                        <td class="h2-podsumowanie-zakupu">W każdej chwili możesz się wypisać, korzystając z linka znajdującego się na dole strony głównej.</td></tr>
+                </table>
+                <a href="StronaGłównaRezerwacji.html"><button class="rezerwuj-podsumowanie-zakupu">Rezerwuj</button></a>
+            </div>
+        </div>
+        
+    </Section>
+</body>
+</html>

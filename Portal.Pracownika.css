@@ -1,0 +1,247 @@
+*,
+ *::before,
+  *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior:smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;   
+    font-family: sans-serif;
+}
+.one{
+    position: sticky;
+    width:100%;
+    top:0;
+	height:8vh;
+	display:flex;
+	justify-content: space-between;
+	background:#1f2020;
+    align-items: center;
+    z-index: 2;
+}
+.logo1{
+    display: flex;
+    padding: 0 40px;
+}
+nav{
+    display:flex;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#d9d9d9;
+    font-size: 0.85rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    white-space: nowrap;
+    margin: 0 2vh;
+    
+}
+nav ul li a:hover{
+    color:#00aeae;
+
+}
+nav ul li div{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    margin: 0 2vh;
+}
+.fa-bell{
+    font-size: 1rem;
+}
+.fa-bell:hover{
+    color: #00aeae;
+    transition: 0.1s ease-in;
+}
+.User{
+    position: absolute;
+    align-items: center;
+}
+.boxuser{
+    position: sticky;
+    width: 5vh;
+    height: 5vh;
+    background: #d9d9d9;
+    border-radius:100%;
+}
+.User .boxuser{
+    display: flex;
+}
+
+.hamburger{
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 40px;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #d9d9d9;
+        margin: 6px 0;
+    }
+    .navbar1{
+        display: none;
+    }
+    header .navbar2{
+        height: 0;
+        position: absolute;
+        align-items: center;
+        right: 0;
+        width: 30vw;
+        background:#1f2020;
+        transition: 0.8s;
+        overflow: hidden;
+    }
+    .navbar2.active{
+        height: 400px;
+    }
+    .navbar2 ul{
+        display: block;
+        width: fit-content;
+        margin: 10px auto 0 auto;
+        text-align: center;
+    }
+    .navbar2 ul li a{
+        margin: 20px;
+        opacity: 0;
+    }
+    .navbar2.active li a{
+        opacity: 1;
+    }
+}
+.tlostart{
+    display: flex;
+    height: 92vh;
+    background: url(images/tlo_droga_bmw.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.nawigacjastart{
+    height: 100%;
+    width: 20vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19px);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.nawigacjastart ul{
+    display: block;
+}
+.nawigacjastart ul li a{
+    justify-content: start;
+    margin: -0.5vh 2vh;
+}
+.napis{
+    position: relative;
+    font-size: 1rem;
+    left: 3vh;
+}
+.kafelkistart{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.kafelkistart .okno1start{
+    display: flex;
+    width: 50vh;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19px);
+    border-radius: 5px;
+}
+.okno1start .akapitstart{
+    display: flex;
+    width: 50vh;
+    height: 10vh;
+    background: #00aeae;
+    color: #fff;
+    position: relative;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.haslo{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.kafelkistart .okno2start{
+    display: flex;
+    width: 50vh;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19px);
+    margin: 0 3%;
+    border-radius: 5px;
+}
+.okno2start .akapitstart{
+    display: flex;
+    width: 50vh;
+    height: 10vh;
+    background: #00aeae;
+    color: #fff;
+    position: relative;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.kafelkistart .okno3start{
+    display: flex;
+    width: 50vh;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19px);
+    border-radius: 5px;
+}
+.okno3start .akapitstart{
+    display: flex;
+    width: 50vh;
+    height: 10vh;
+    background: #00aeae;
+    color: #fff;
+    position: relative;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.start{
+    font-size: 1rem;
+    position: relative;
+    right: 4vh;
+    color: #00aeae;
+}

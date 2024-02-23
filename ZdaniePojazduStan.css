@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+*,
+ *::before,
+  *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior:smooth;
+}
+body{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+.bannerpojazd{
+    display: flex;
+    height: 110vh;
+    background: url(images/toyota_rav4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+}
+.one{
+    width:100%;
+	height:8vh;
+    top:0;
+	display:flex;
+	justify-content: space-between;
+	background:#1f2020;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+}
+.one .two{
+    position: fixed;
+}
+nav{
+    display:flex;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#d9d9d9;
+    font-size: 0.85rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    white-space: nowrap;
+    margin: 0 2vh;
+    
+}
+nav ul li a:hover{
+    color:#00aeae;
+
+}
+nav ul li div{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    margin: 0 2vh;
+}
+.fa-bell{
+    font-size: 1rem;
+}
+.fa-bell:hover{
+    color: #00aeae;
+    transition: 0.2s ease-in;
+}
+.User{
+    position: absolute;
+    align-items: center;
+}
+.boxuser{
+    position: sticky;
+    width: 5vh;
+    height: 5vh;
+    background: #d9d9d9;
+    border-radius:100%;
+}
+.User .boxuser{
+    display: flex;
+}
+.two{
+    position: sticky;
+    left:0;
+    top: 0;
+    width:100%;
+	height:8vh;
+	display:flex;
+	background:#1f2020;
+    z-index: 2;
+}
+.navbar2{
+    display: flex;
+    margin:auto;
+}
+.navbar2 ul{
+    display: flex;
+}
+.navbar2 ul li a{
+    text-decoration: none;
+    color: #d9d9d9;
+    position: relative;    
+}
+.navbar2 ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #00aeae;
+    height: 2px;
+    width: 100%;
+    left:0;
+    bottom: -2px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+.navbar2 ul li a:hover{
+    color:#d9d9d9;
+}
+.navbar2 ul li a:hover::after{
+    transform: scaleX(1);
+}
+.stan{
+    color:#00aeae;
+}
+.okno{
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 10vh;
+    backdrop-filter: blur(19px);
+    border-radius: 5px;
+}
+.tytul{
+    color:#fff;
+    font-size: 1.8rem;
+    z-index: 2;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 5vw;
+}
+.akapit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 8vh;
+    background-color: #00aeae;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    z-index: 1;
+}
+.formatka-uszkodzenia{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+}
+.legenda{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top:5vh;
+    color:#00aeae;
+}
+.okienka{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    position: relative;
+    top: 10vh;
+    align-items: center;
+    margin-left: 10vh;
+}
+span{
+    color: #fff;
+}
+.okienka span{
+    position: flex;
+}
+#okienko-red{
+    width: 3vh;
+    height: 3vh;
+    background: red;
+    border-radius: 10px;
+}
+#okienko-green{
+    width: 3vh;
+    height: 3vh;
+    background: green;
+    border-radius: 10px;
+}
+#okienko-purple{
+    width: 3vh;
+    height: 3vh;
+    background: purple;
+    border-radius: 10px;
+}
+#okienko-yellow{
+    width: 3vh;
+    height: 3vh;
+    background: yellow;
+    border-radius: 10px;
+}
+#okienko-orange{
+    width: 3vh;
+    height: 3vh;
+    background: orange;
+    border-radius: 10px;
+}
+#okienko-grey{
+    width: 3vh;
+    height: 3vh;
+    background: grey;
+    border-radius: 10px;
+}
+.przyciski{
+    justify-content: space-between;
+    display: flex;
+    margin-top:15vh;
+}
+button{
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    width: 30vh;
+    height: 4vh;
+    border: none;
+    background-color: #fff;
+    transition: all 0.2s ease-in;
+}
+button:hover{
+    background-color: #00aeae;
+    color:#fff
+}
+.wstecz{
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.dalej{
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

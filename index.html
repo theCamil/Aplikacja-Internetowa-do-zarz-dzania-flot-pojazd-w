@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar/Wynajem</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <div class="logo1">
+            <a href="#"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+        </div>
+        
+            <nav class="navbar1">
+                <ul>
+                    <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                    <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                    <li><div class="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="#Bell"><i class="fa fa-bell"></i></a></li>
+                    <li><div class ="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="#Language">PL</a></li>
+                    <li><div class="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>  
+                <nav class="navbar2">
+                    <ul>
+                        <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                        <li><a href="#User">Uytkownik</a></li>
+                        <li><a href="#Bell">Powiadomienia</a></li>
+                        <li><a href="#Language">PL</a></li>
+                        <li><a href="#LogOut">Wyloguj</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar2 = document.querySelector(".navbar2");
+            navBar2.classList.toggle("active");
+        }
+    </script>
+    <section class="wybor-okno-glowne">
+        <div class="kafelek1-okno-glowne">
+            <div class="akapit-okno-glowne">
+                <p class="text1-okno-glowne">Portal pracownika</p> 
+            </div>
+            <i class="fa-solid fa-user-group" style="color: #fff;"></i>
+            <ul class="lista-okno-glowne">
+                <li class="lista2-okno-glowne"><a href="PortalPracownikaKalendarz.html">Kalendarz</a></li>
+                <li class="lista2-okno-glowne"><a href="PortalPracownikaWniosek.html">Wnioski urlopowe</a></li>
+                <li class="lista2-okno-glowne"><a href="PortalPracownikaDokumenty.html">Dokumenty</a></li>
+                <li class="lista2-okno-glowne"><a href="PortalPracownikaUser.html">Dane pracownika</a></li>
+            </ul>
+            <a href="PortalPracownika.html"><button class="przejdz-okno-glowne">Przejdź</button></a>
+        </div>
+        <div class="kafelek2-okno-glowne">
+            <div class="akapit-okno-glowne">
+                <p class="text1-okno-glowne">Strona główna</p> 
+            </div>
+            <i class="fa-solid fa-house" style="color: #fff;"></i>
+            <ul class="lista-okno-glowne">
+                <li class="lista2-okno-glowne"><a href="StronaGłównaRezerwacji.html">Strona główna</a></li>
+                <li class="lista2-okno-glowne"><a href="StronaRezerwacji.html">Wybór pojazdu</a></li>
+                <li class="lista2-okno-glowne"><a href="#">Nasze auta</a></li>
+                <li class="lista2-okno-glowne"><a href="#">Kontakt</a></li>
+            </ul>
+            <a href="StronaGłównaRezerwacji.html"><button class="przejdz-okno-glowne">Przejdź</button></a>
+        </div>
+        <div class="kafelek3-okno-glowne">
+            <div class="akapit-okno-glowne">
+                <p class="text1-okno-glowne">Wydanie / Zdanie</p> 
+            </div>
+            <i class="fa-solid fa-car" style="color: #FFF;"></i>
+            <ul class="lista-okno-glowne">
+                <li class="lista2-okno-glowne"><a href="WydaniePojazduNajemca.html">Wydanie samochodu</a></li>
+                <li class="lista2-okno-glowne"><a href="ZdaniePojazduNajemca.html">Zdanie pojazdu</a></li>
+                <li class="lista2-okno-glowne"><a href="PrzypisaniePojazdu.html">Przypisanie pojazdu do wydana</a></li>
+                <li class="lista2-okno-glowne"><a href="PojazdyWynajete.html">Pojazdy wynajęte</a></li>
+            </ul>
+            <a href="Wynajem.html"><button class="przejdz-okno-glowne">Przejdź</button></a>
+        </div>
+    </section>
+</body>
+</html>
+

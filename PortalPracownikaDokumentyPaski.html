@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar/Wynajem</title>
+    <link rel="stylesheet" href="PortalPracownikaDokumentyPaski.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <div class="logo1">
+            <a href="index.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+        </div>
+            <nav class="navbar1">
+                <ul>
+                    <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                    <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                    <li><div class="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="#Bell"><i class="fa fa-bell"></i></a></li>
+                    <li><div class ="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="#Language">PL</a></li>
+                    <li><div class="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>  
+                <nav class="navbar2">
+                    <ul>
+                        <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                        <li><a href="#User">Uytkownik</a></li>
+                        <li><a href="#Bell">Powiadomienia</a></li>
+                        <li><a href="#Language">PL</a></li>
+                        <li><a href="PanelLogowania.html">Wyloguj</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar2 = document.querySelector(".navbar2");
+            navBar2.classList.toggle("active");
+        }
+    </script>
+    <section class="tlopaski">
+        <section class="nawigacjapaski">
+            <nav class="nawigacjapaski">
+                <ul>
+                    <li><a href="PortalPracownika.html"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i><p class="napis">Start</p></a></li>
+                    <li><a href="PortalPracownikaUser.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i><p class="napis">Moje dane</p></a></li>
+                    <li><a href="PortalPracownikaKalendarz.html"><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i><p class="napis">Kalendarz</p></a></li>
+                    <li><a href="PortalPracownikaDokumenty.html"><i class="fa-solid fa-file" style="color: #ffffff;"></i><a class="dokumentynapis"><p>Dokumenty</p></a></a></li>
+                    <li><a href="PortalPracownikaUrlopy.html"><i class="fa-solid fa-umbrella-beach" style="color: #ffffff;"></i><p class="napis">Urlop</p></a></li>
+                    <li><a href="PortalPracownikaWniosek.html"><i class="fa-solid fa-file-import" style="color: #ffffff;"></i><p class="napis">Wnoski</p></a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="oknopaski">
+            <div class="okno-dokumenty-paski">
+                <nav class="opcje-wyboru-paski">
+                    <ul>
+                        <li class="lista-paskiPlacowe"><a href="PortalPracownikaDokumenty.html"><p class="wybor">Umowa</p></a></li>
+                        <li class="lista-paskiPlacowe"><a href="#"><p class="wybor1paski">Paski płacowe</p></a></li>
+                        <li class="lista-paskiPlacowe"><a href="PortalPracownikaDokumentyAneks.html"><p class="wybor">Aneksy do umowy</p></a></li>
+                    </ul>
+                </nav>
+                <div class="okienko1paski"><p class="umowapaski">Twoje paski płacowe</p></div>
+                <div class="scrollbox-paski">
+                    <table class="tabela-paski">
+                        <tr><td>Michał Kowalski</td><td>Za okres Styczeń:</td><td>01.01.2023</td><td>Wystawione:</td><td>09.02.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Za okres Luty:</td><td>01.02.2023</td><td>Wystawione:</td><td>09.03.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Za okres Marzec:</td><td>01.03.2023</td><td>Wystawione:</td><td>09.04.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Za okres Kwiecień:</td><td>01.04.2023</td><td>Wystawione:</td><td>09.05.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Za okres Maj:</td><td>01.05.2023</td><td>Wystawione:</td><td>09.06.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Za okres Czerwiec:</td><td>01.06.2023</td><td>Wystawione:</td><td>09.07.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Za okres Lipiec:</td><td>01.07.2023</td><td>Wystawione:</td><td>09.08.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Za okres Sierpień:</td><td>01.08.2023</td><td>Wystawione:</td><td>09.09.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Za okres Wrzesień:</td><td>01.09.2023</td><td>Wystawione:</td><td>09.10.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Za okres Październik:</td><td>01.10.2023</td><td>Wystawione:</td><td>09.11.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Za okres Listopad:</td><td>01.11.2023</td><td>Wystawione:</td><td>09.12.2023</td><td><a class="wybierz" href="PasekPlacowy.html"><button class="choicepaski" type="submit">Wybierz</button></a></td></tr>
+                    </table> 
+                </div>
+            </div>
+        </section>
+    </section>
+</body> 
+</html> 

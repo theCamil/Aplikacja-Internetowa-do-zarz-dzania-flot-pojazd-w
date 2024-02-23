@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar</title>
+    <link rel="stylesheet" href="WybórUbezpieczenia.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+    <script src="WybórUbezpieczenia.js"></script>
+</head>
+<body>
+    <header class="one">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+        <nav>
+            <ul>
+                <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Bell"><i class="fa-solid fa-bell"></i></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Language">PL</a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="two">
+        <nav class="navbar2"> <!-- Przesunąć cały do góry?? -->
+            <ul>
+                <li>
+                    <a href="StronaGłównaRezerwacji.html"><p>1.Rezerwacja</p></a>
+                    <a href="StronaRezerwacji.html"><p>2.Pojazd</p></a>
+                    <a href="WybórUbezpieczenia.html"><p class="ubezpieczenie">3.Ubezpieczenie</p></a>
+                    <a href="WybórWyposażenia.html"><p>4.Wyposażenie</p></a>
+                    <a href="TwojeDane.html"><p>5.Twoje dane</p></a>
+                    <a href="PodsumowanieZakupu.html"><p>6.Płatność</p></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <Section class="banner-wybor-ubezpieczenia" id="banner">
+        <div class="okno-wybor-ubezpieczenia">
+            <h2><a class="tytul-wybor-ubezpieczenia">Pakiet</a> Ubezpieczeń</h2>
+        </div>
+        <div>
+            <table class="tabela-wybor-ubezpieczenia">
+                <tr>
+                  <th></th>
+                  <th><img src="images/TarczaUbezpieczeń.png" class="Tarcza-wybor-ubezpieczenia">Podstawowa Ochrona</th>
+                  <th><img src="images/TarczaUbezpieczeń.png" class="Tarcza-wybor-ubezpieczenia">Ochrona Rozszerzona</th>
+                  <th><img src="images/TarczaUbezpieczeń.png" class="Tarcza-wybor-ubezpieczenia">Pełna Ochrona</th>
+                </tr>
+                <tr>
+                  <td>Kwota udziału własnego</td>
+                  <td class="selected-column-wybor-ubezpieczenia">900.00 EUR</td>
+                  <td>400.00 EUR</td>
+                  <td>00.00 EUR</td>
+                </tr>
+                <tr>
+                  <td>CDW (AC)/TP (ochrona przed kradzieżą)- Zmniejszona odpowiedzialność za szkodę lub kradzież</td>
+                  <td class="selected-column-wybor-ubezpieczenia"><span class="far fa-circle-check Mark1" id="Mark1"></span></td>
+                  <td><span class="far fa-circle-check Mark4" id="Mark4"></span></td>
+                  <td><span class="far fa-circle-check Mark6" id="Mark8"></span></td>
+                </tr>
+                <tr>
+                    <td>CDW+ - Ochrona ubieczeniowa ze zmiejsszonym dostępem</td>
+                    <td class="selected-column-wybor-ubezpieczenia"></td>
+                    <td><span class="far fa-circle-check Mark5" id="Mark5"></span></td>
+                    <td><span class="far fa-circle-check Mark9" id="Mark9"></span></td>
+                </tr>
+                <tr>
+                    <td>SCDW - pełne pokrycie udziału własnego w szkodzie w przypadku wystąpienia szkody pojazdu/obrażeń ciała</td>
+                    <td class="selected-column-wybor-ubezpieczenia"></td>
+                    <td></td>
+                    <td><span class="far fa-circle-check Mark10" id="Mark10"></span></td>
+                </tr>
+                <tr>
+                    <td>WUG (Koła, Podwozie, Szyby) - Ochrona kół, podwozia i szyb</td>
+                    <td class="selected-column-wybor-ubezpieczenia"></td>
+                    <td></td>
+                    <td><span class="far fa-circle-check Mark11" id="Mark11"></span></td>
+                </tr>
+                <tr>
+                    <td>Nieograniczony Przebieg</td>
+                    <td class="selected-column-wybor-ubezpieczenia"><span class="far fa-circle-check Mark2" id="Mark2"></span></td>
+                    <td><span class="far fa-circle-check Mark6" id="Mark6"></span></td>
+                    <td><span class="far fa-circle-check Mark12" id="Mark12"></span></td>
+                </tr>
+                <tr>
+                    <td>VAT 23%</td>
+                    <td class="selected-column-wybor-ubezpieczenia"><span class="far fa-circle-check Mark3" id="Mark3"></span></td>
+                    <td><span class="far fa-circle-check Mark7" id="Mark7"></span></td>
+                    <td><span class="far fa-circle-check Mark13" id="Mark13"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="selected-column-wybor-ubezpieczenia"> <br> Suma: 00.00 EUR <br>
+                        <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                        <label for="Wybór1" class="Label1-wybor-ubezpieczenia">WYBIERZ </label>                        
+                    </td>
+                    <td> <br> Suma: 45.00 EUR <br>
+                        <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                        <label for="Wybór2" class="Label2-wybor-ubezpieczenia"> WYBIERZ </label>                        
+                    </td>
+                    <td> <br> Suma: 80.00 EUR <br>
+                        <input type="radio" name="Ubezpieczenie" id="Wybór3">
+                        <label for="Wybór3" class="Label3-wybor-ubezpieczenia"> WYBIERZ </label>                        
+                    </td>
+                </tr>
+              </table>
+        </div>
+        <button onclick="location.href = 'WybórWyposażenia.html';">Dalej</button>
+    </Section>
+    
+</body>
+</html>

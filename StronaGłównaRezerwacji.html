@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar</title>
+    <link rel="stylesheet" href="StronaGłównaRezerwacji.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+        <nav>
+            <ul>
+                <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Bell"><i class="fa-solid fa-bell"></i></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Language">PL</a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="two-glowna-rezerwacji">
+        <nav class="navbar2-glowna-rezerwacji"> <!-- Przesunąć cały do góry?? -->
+            <ul>
+                <li>
+                    <a href="NaszeAuta.html"><p>Nasze Auta</p></a>
+                    <a href="NaszeUsługi.html"><p>Nasze Usługi</p></a>
+                    <a href="ONas.html"><p>O Nas<!-- Albo Kontakt bylby lepszy bo "O nas" dziwnie wygląda --></p></a>
+                    <a href="Kontakt.html"><p>Kontakt</p></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <Section class="banner-glowna-rezerwacji" id="banner">
+        <div class="slider-glowna-rezerwacji">
+            <div class="slides-glowna-rezerwacji"> 
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+                <div class="slide first">
+                    <img src="images/bmw_5_przycięte.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/wallpaper1_przycięte.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/volvo.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/mazda.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/hyundainiro_przyciete.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/mercedes_classE_przycięte.jpg" alt="">
+                </div>
+                <div class="navigation-auto-glowna-rezerwacji">
+                    <div class="auto-btn1-glowna-rezerwacji"></div>
+                    <div class="auto-btn2-glowna-rezerwacji"></div>
+                    <div class="auto-btn3-glowna-rezerwacji"></div>
+                    <div class="auto-btn4-glowna-rezerwacji"></div>
+                    <div class="auto-btn5-glowna-rezerwacji"></div>
+                    <div class="auto-btn6-glowna-rezerwacji"></div>
+                </div>
+                <div class="navigation-manual-glowna-rezerwacji">
+                    <label for="radio1" class="manual-btn-glowna-rezerwacji"></label>
+                    <label for="radio2" class="manual-btn-glowna-rezerwacji"></label>
+                    <label for="radio3" class="manual-btn-glowna-rezerwacji"></label>
+                    <label for="radio4" class="manual-btn-glowna-rezerwacji"></label>
+                    <label for="radio5" class="manual-btn-glowna-rezerwacji"></label>
+                    <label for="radio6" class="manual-btn-glowna-rezerwacji"></label>
+                </div>  
+            </div>
+            <div class="okno-glowna-rezerwacji">
+                <h2 class="tytul-glowna-rezerwacji"><a class="nowa-glowna-rezerwacji">Nowa</a> Rezerwacja</h2>
+                <span class="GodzinaOdbioru" id="GodzinaOdbioru">Godzina odbioru</span>
+                <input type="datetime-local" id="OdKiedy" class="OdKiedy" min="00:00" max="T00:00">
+                <span class="GodzinaZwrotu" id="GodzinaZwrotu">Godzina zwrotu</span>
+                <input type="datetime-local" id="DoKiedy" class="DoKiedy" min="00:00" max="T00:00">
+                <span class="MiejsceOdbioru" id="MiejsceOdbioru">Miejsce odbioru</span>
+                <span class="słowoMiejsce" id="słowoMiejsce">Miejsce</span>
+                <span class="Rozdziałka" id="Rozdziałka">/</span>
+                <span class="słowoZwrot" id="słowoZwrot">zwrotu</span>
+                <select name="Miejsce" id="select" class="Gdzie">
+                    <option value="Dolnośląskie">Województwo Dolnośląskie</option>
+                    <option value="Kujawsko-Pomorskie">Województwo Kujawsko-Pomorskie</option>
+                    <option value="Świętokrzyskie">Województwo Świętokrzyskie</option>
+                    <option value="Lubelskie">Województwo Lubelskie</option>
+                    <option value="Lubuskie">Województwo Lubuskie</option>                
+                    <option value="Łódzkie">Województwo Łódzkie</option>                
+                    <option value="Małopolskie">Województwo Małopolskie</option>                
+                    <option value="Mazowieckie">Województwo Mazowieckie</option>                
+                    <option value="Opolskie">Województwo Opolskie</option>                
+                    <option value="Podkarpackie">Województwo Podkarpackie</option>                
+                    <option value="Podlaskie">Województwo Podlaskie</option>                
+                    <option value="Pomorskie">Województwo Pomorskie</option>
+                    <option value="Śląsk">Województwo Śląsk</option>                
+                    <option value="Warminsko-Mazurskie">Województwo Warminsko-Mazurskie</option>                
+                    <option value="Wielkopolskie">Województwo Wielkopolskie</option>                
+                    <option value="Zachodnio-Pomorskie">Województwo Zachodnio-Pomorskie</option>
+                </select>
+                <select name="Miejsce" id="select2" class="MiejsceZwrotu">
+                    <option value="Dolnośląskie">Województwo Dolnośląskie</option>
+                    <option value="Kujawsko-Pomorskie">Województwo Kujawsko-Pomorskie</option>
+                    <option value="Świętokrzyskie">Województwo Świętokrzyskie</option>
+                    <option value="Lubelskie">Województwo Lubelskie</option>
+                    <option value="Lubuskie">Województwo Lubuskie</option>                
+                    <option value="Łódzkie">Województwo Łódzkie</option>                
+                    <option value="Małopolskie">Województwo Małopolskie</option>                
+                    <option value="Mazowieckie">Województwo Mazowieckie</option>                
+                    <option value="Opolskie">Województwo Opolskie</option>                
+                    <option value="Podkarpackie">Województwo Podkarpackie</option>                
+                    <option value="Podlaskie">Województwo Podlaskie</option>                
+                    <option value="Pomorskie">Województwo Pomorskie</option>                
+                    <option value="Śląsk">Województwo Śląsk</option>                
+                    <option value="Warminsko-Mazurskie">Województwo Warminsko-Mazurskie</option>                
+                    <option value="Wielkopolskie">Województwo Wielkopolskie</option>                
+                    <option value="Zachodnio-Pomorskie">Województwo Zachodnio-Pomorskie</option>
+                </select>
+                <button onclick="location.href = 'StronaRezerwacji.html';">Szukaj</button>
+                <div class="checkbox-glowna-rezerwacji">
+                    <label>
+                        <input type="checkbox" id="toggleCheckbox" /><span style="float: right; margin: -1px 5px;"> Inne miejsce zwrotu</span>
+                    </label>
+                </div>
+            </div>
+            
+        </div>
+    </Section>
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 6){
+                counter = 1;
+            }
+        }, 6000)
+    </script>
+    <script>
+        // Pobierz checkbox i pola wpisywania
+        const toggleCheckbox = document.getElementById('toggleCheckbox');
+        const style = document.getElementById('InputFields');
+        const DokiedyInput = document.getElementById('DoKiedy');
+        const select2 = document.getElementById('select2');
+        const GodzinaZwrotu = document.getElementById('GodzinaZwrotu');
+        const Rozdziałka = document.getElementById('Rozdziałka');
+        const słowoMiejsce = document.getElementById('słowoMiejsce');
+        const słowoZwrot = document.getElementById('słowoZwrot');
+
+        function fadeIn(element, duration) {
+        element.style.transition = `opacity ${duration}ms`;
+        element.style.opacity = '1';
+        }
+        function fadeOut(element, duration) {
+        element.style.transition = `opacity ${duration}ms`;
+        element.style.opacity = '0';
+        }
+
+        // Dodaj obsługę zdarzenia zmiany stanu checkbox'a
+        toggleCheckbox.addEventListener('change', function() {
+          // Jeśli checkbox jest zaznaczony, pokaż pola wpisywania; w przeciwnym razie ukryj je
+          if (toggleCheckbox.checked) {
+            select2.style.pointerEvents = 'auto';
+            fadeIn(select2, 800);          
+            DokiedyInput.style.transition = 'left 0.5s';
+            DokiedyInput.style.left = '65vw';
+            GodzinaZwrotu.style.transition = 'left 0.5s';
+            GodzinaZwrotu.style.left = '60vw';
+            fadeOut(Rozdziałka,900);
+            słowoMiejsce.style.transition = 'left 0.5s';
+            słowoMiejsce.style.left = '44.5vw';
+            słowoZwrot.style.transition = 'left 0.5s';
+            słowoZwrot.style.left = '48vw';
+          } else {
+            select2.style.pointerEvents = 'none';
+            fadeOut(select2, 200);           
+            DokiedyInput.style.transition = 'left 0.5s';
+            DokiedyInput.style.left = '46vw';
+            GodzinaZwrotu.style.transition = 'left 0.5s';
+            GodzinaZwrotu.style.left = '41vw';
+            fadeIn(Rozdziałka,900);
+            słowoMiejsce.style.transition = 'left 0.5s';
+            słowoMiejsce.style.left = '11.5vw';
+            słowoZwrot.style.transition = 'left 0.5s';
+            słowoZwrot.style.left = '19.5vw';        
+          }
+        });
+
+    </script>
+</body>
+</html>

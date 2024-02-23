@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar</title>
+    <link rel="stylesheet" href="WybórWyposażenia.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+        <nav>
+            <ul>
+                <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Bell"><i class="fa-solid fa-bell"></i></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Language">PL</a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="two">
+        <nav class="navbar2"> <!-- Przesunąć cały do góry?? -->
+            <ul>
+                <li>
+                    <a href="StronaRezerwacji.html"><p>1.Rezerwacja</p></a>
+                    <a href="StronaRezerwacji.html"><p>2.Pojazd</p></a>
+                    <a href="WybórUbezpieczenia.html"><p>3.Ubezpieczenie</p></a>
+                    <a href="WybórWyposażenia.html"><p class="wyposazenie">4.Wyposażenie</p></a>
+                    <a href="TwojeDane.html"><p>5.Twoje dane</p></a>
+                    <a href="PodsumowanieZakupu.html"><p>6.Płatność</p></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <Section class="banner-wybor-wyposazenie" id="banner">
+        <div class="okno-wybor-wyposazenie">
+            <h2><a class="tytul-wybor-wyposazenie">Wyposażenie</a> Samochodu</h2>
+            <div class="miniOkno1-wybor-wyposazenie">
+               <input type="checkbox"  class="opcja1-wybor-wyposazenie" id="opcja1"><label class="wybierz1-wybor-wyposazenie" for="opcja1">Dodaj</label>
+                <p class="OpisOpcji-wybor-wyposazenie"><span style="color: #00aeae;font-size: 20px;">Zezwolenie transgraniczne (NPL)</span><br>
+                     Jeżeli planujesz podróż poza granice kraju, musisz wybrać opłatę za przekroczenie granicy.
+                      Pojazdy posiadają terytorialną ważność ubezpieczenia w Europie. 
+                     Dotyczy wyjazdu do krajów graniczących z Polską na terenie Unii Europejskiej.
+                </p>                       
+            </div>
+            <div class="miniOkno2-wybor-wyposazenie">
+                <input type="checkbox" class="opcja2-wybor-wyposazenie" id="opcja2"><label class="wybierz2-wybor-wyposazenie" for="opcja2">Dodaj</label>
+                <p class="OpisOpcji-wybor-wyposazenie"><span style="color: #00aeae;font-size: 20px;">Zezwolenie transgraniczne (FFPL)</span><br>
+                    Jeżeli planujesz podróż poza granice kraju, musisz wybrać opłatę za przekroczenie granicy.
+                     Pojazdy posiadają terytorialną ważność ubezpieczenia w Europie. 
+                     Dotyczy wyjazdu do krajów na terenie Unii Europejskiej.
+               </p>
+            </div>
+            <div class="miniOkno3-wybor-wyposazenie">
+                <input type="checkbox" class="opcja3-wybor-wyposazenie" id="opcja3"><label class="wybierz3-wybor-wyposazenie" for="opcja3">Dodaj</label>
+                <p class="OpisOpcji-wybor-wyposazenie"><span style="color: #00aeae;font-size: 20px;">Dodatkowy kierowca</span><br>
+                    Dwoje to zawsze lepiej niż jeden.
+                    Możesz zapewnić sobie beztroskie wakacje, 
+                    pełne relaksu dodając kolejnego kierowcę do swojej rezerwacji i nie pozostawiając niczego przypadkowi.
+               </p>
+            </div>
+            <div class="miniOkno4-wybor-wyposazenie">
+                <input type="checkbox" class="opcja4-wybor-wyposazenie" id="opcja4"><label class="wybierz4-wybor-wyposazenie" for="opcja4">Dodaj</label>
+                <p class="OpisOpcji-wybor-wyposazenie"><span style="color: #00aeae;font-size: 20px;">Nawigacja satelitarna GPS</span><br>
+                    Jeżeli chcesz dojechać na czas do wybranego miejsca i jak najpełniej wykorzystać swój czas,
+                     możesz wypożyczyć naszą nawigacje i zapewnić sobie wysokiej jakości przewodnika na swoje wakacje. 
+               </p>
+            </div>
+            
+            
+            <button onclick="location.href = 'TwojeDane.html';">Dalej</button>
+        </div>
+        
+       
+    </Section>
+    
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar</title>
+    <link rel="stylesheet" href="ZdaniePojazduWyposazenie.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="Wynajem.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+        <nav>
+            <ul>
+                <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Bell"><i class="fa fa-bell"></i></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Language">PL</a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="two">
+        <nav class="navbar2">
+            <ul>
+                <li>
+                    <a href="WyborPojazduZdanie.html"><p>1. Wybór auta</p></a>
+                    <a href="ZdaniePojazduNajemca.html"><p>2. Dane najmecy</p></a>
+                    <a href="ZdaniePojazduKierowca.html"><p class="kierowca">3. Dane kierowcy</p></a>
+                    <a href="ZdaniePojazduPojazd.html"><p>4. Dane pojazdu</p></a>
+                    <a href="ZdaniePojazduWyposazenie.html"><p class="wyposazenie">5. Wyposażenie pojazdu</p></a>
+                    <a href="ZdaniePojazduStan.html"><p>6. Stan pojazdu</p></a>
+                    <a href="ZdaniePojazduPodpis.html"><p>7. Podpis najemcy</p></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bannerpojazd" id="bannerpojazd">
+        <div class="okno">
+            <div class="akapit">
+                <h2 class="tytul">WYPOSAŻENIE PODSTAWOWE</h2>
+            </div>
+            <form action="#">
+                <div class="info">
+                    <div class="dane">
+                        <label><input type="checkbox" name="DokumentRejestracyjny"> Dokument rejestracyjny<label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Gasnica"> Gaśnica</label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Trojkat"> Trójkąt ostrzegawczy </label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Apteczka"> Apteczka</label>
+                    </div>
+                </div>
+            </form>
+            <div class="akapit2">
+                <h2 class="tytul2">WYPOSAŻENIE DODATKOWE</h2>
+            </div>
+            <form action="#">
+                <div class="info2">
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Antena"> Antena<label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Podnosnik"> Podnośnik</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Zestaw"> Zestaw naprawczy</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Roleta"> Roleta/półka bagaznika</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Zapas"> Koło zapasowe</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Gps"> GPS</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Gwarancja"> Ksiąka gwarancyjna</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Instrukcja"> Instrukcja obsługi</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Dywaniki"> Dywaniki</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Karta"> Karta nawigacji</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Koło dojazdowe"> Koło zapasowe dojazdowe</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Hak"> Hak holowniczy</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Walizka"> Walizka narzędziowa</label>
+                    </div>
+                    <div class="dane2">
+                        <label><input type="checkbox" name="Skrobak"> Skrobak do szyb</label>
+                    </div>
+                </div>
+            </form>
+           
+              
+            <div class="przyciski">
+                <div class="btn-wstecz">
+                    <a href="ZdaniePojazduPojazd.html"><button class="wstecz">Wstecz</button></a>
+                </div>
+                <div class="btn-dalej">
+                    <a href="ZdaniePojazduStan.html"><button class="dalej">Dalej</button></a>
+                </div>
+            </div>
+        </div>   
+    </section>

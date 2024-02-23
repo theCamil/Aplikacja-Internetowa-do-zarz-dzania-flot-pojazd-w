@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar</title>
+    <link rel="stylesheet" href="WydaniePojazduPodpis.css" />
+    <link href="https://mozilla.github.io/pdf.js/web/viewer.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+</head>
+<body>
+    <header class="one">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="Wynajem.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+        <nav>
+            <ul>
+                <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Bell"><i class="fa fa-bell"></i></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Language">PL</a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="two">
+        <nav class="navbar2">
+            <ul>
+                <li>
+                    <a href="WybórPojazduWydanie.html"><p>1. Wybór auta</p></a>
+                    <a href="WydaniePojazduNajemca.html"><p>2. Dane najmecy</p></a>
+                    <a href="WydaniePojazduKierowca.html"><p>3. Dane kierowcy</p></a>
+                    <a href="WydaniePojazduPojazd.html"><p>4. Dane pojazdu</p></a>
+                    <a href="WydaniePojazduWyposazenie.html"><p>5. Wyposażenie pojazdu</p></a>
+                    <a href="WydaniePojazduStan.html"><p>6. Stan pojazdu</p></a>
+                    <a href="WydaniePojazduPodpis.html"><p class="stan">7. Podpis najemcy</p></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bannerpojazd" id="bannerpojazd">
+        <div class="okno">
+            <div class="akapit">
+                <h2 class="tytul">PODPISANIE UMOWY NAJMU POJAZDU</h2>
+            </div>
+            <div class="frame">
+                <iframe id="pdfFrame" src="https://mozilla.github.io/pdf.js/web/viewer.html?file=ścieżka/do/pliku.pdf"></iframe>
+            </div>  
+            <div class="przyciski">
+                <div class="btn-wstecz">
+                    <a href="WydaniePojazduStan.html"><button class="wstecz">Wstecz</button></a>
+                </div>
+                <div class="btn-dalej">
+                    <a href="Wynajem.html"><button class="zakoncz">Zakończ</button></a>
+                </div>
+            </div>
+        </div>   
+    </section>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar</title>
+    <link rel="stylesheet" href="WydaniePojazduPojazd.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="Wynajem.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+        <nav>
+            <ul>
+                <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Bell"><i class="fa fa-bell"></i></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Language">PL</a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="two">
+        <nav class="navbar2">
+            <ul>
+                <li>
+                    <a href="WybórPojazduWydanie.html"><p>1. Wybór auta</p></a>
+                    <a href="WydaniePojazduNajemca.html"><p>2. Dane najmecy</p></a>
+                    <a href="WydaniePojazduKierowca.html"><p>3. Dane kierowcy</p></a>
+                    <a href="WydaniePojazduPojazd.html"><p class="pojazd">4. Dane pojazdu</p></a>
+                    <a href="WydaniePojazduWyposazenie.html"><p>5. Wyposażenie pojazdu</p></a>
+                    <a href="WydaniePojazduStan.html"><p>6. Stan pojazdu</p></a>
+                    <a href="WydaniePojazduPodpis.html"><p>7. Podpis najemcy</p></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bannerpojazd" id="bannerpojazd">
+        <div class="okno">
+            <div class="akapit">
+                <h2 class="tytul">DANE PODSTAWOWE</h2>
+            </div>
+            <div class="info">
+                <div class="dane-pojazdu">
+                    <label for="Przebieg">Przebieg</label>
+                    <input type="text"
+                            id="KM"
+                            name="KM"
+                            placeholder="KM"/>
+                </div>
+                <div class="dane-pojazdu">
+                    <label for="Paliwo">Stan paliwa</label>
+                    <input type="text"
+                            id="Paliwo"
+                            name="Paliwo"
+                            placeholder="%"/>
+                </div>
+            </div>
+            <div class="info2">
+                <div class="opis">
+                    <div class="czysty">Czysty na zewnątrz</div>
+                </div>
+                <div class="odp">
+                    <a class="tak">Nie</a><input class="input" type="checkbox" name=""><a class="nie">Tak</a>
+                </div>
+                <div class="opis">
+                    <div class="czysty">Czysty wewnątrz</div>
+                </div>
+                <div class="odp">
+                    <a class="tak">Nie</a><input class="input" type="checkbox" name=""><a class="nie">Tak</a>
+                </div>
+                <div class="opis">
+                    <div class="czysty">Czysta tapicerka</div>
+                </div>
+                <div class="odp">
+                    <a class="tak">Nie</a><input class="input" type="checkbox" name=""><a class="nie">Tak</a>
+                </div>
+                <div class="akapit2">
+                    <h2 class="tytul2">KOŁA I OPONY</h2>
+                </div>
+                <div class="opis2">
+                    <div class="czysty">Takie same opony na przedniej i tylnej osi</div>
+                </div>
+                <div class="odp2">
+                    <a class="tak">Nie</a><input class="input" type="checkbox" name=""><a class="nie">Tak</a>
+                </div>
+                <a class="tytułOś">Oś przód</a>
+                <div class="oś">
+                    <div class="dane-opon">
+                        <label for="Przebieg">Producent opony</label>
+                        <input type="text"
+                                id="KM"
+                                name="KM"
+                                placeholder="Podaj wartość"/>
+                    </div>
+                    <div class="dane-opon">
+                        <label for="Paliwo">Szerokość opony</label>
+                        <input type="text"
+                                id="Paliwo"
+                                name="Paliwo"
+                                placeholder="Podaj wartość"/>
+                    </div>
+                    <div class="dane-opon">
+                        <label for="Przebieg">Profil opony</label>
+                        <input type="text"
+                                id="KM"
+                                name="KM"
+                                placeholder="Podaj wartość"/>
+                    </div>
+                    <div class="dane-opon">
+                        <label for="Paliwo">Srednica opony</label>
+                        <input type="text"
+                                id="Paliwo"
+                                name="Paliwo"
+                                placeholder="Podaj wartość"/>
+                    </div>
+                    <div class="dane-opon2">
+                        <p class="typ">Typ opony</p>
+                        <label><input type="radio" name="oponaPrzód"> Letnie</label>
+                        <label><input type="radio" name="oponaPrzód"> Zimowe</label>
+                        <label><input type="radio" name="oponaPrzód"> Wielosezonowe</label>
+                    </div>
+                    <div class="dane-felgi">
+                        <p class="typ">Typ felgi</p>
+                        <label><input type="radio" name="felgaPrzód"> Aluminiowe</label>
+                        <label><input type="radio" name="felgaPrzód"> Stalowe</label>
+                    </div>
+                </div>
+                <a class="tytułOś2">Oś tył</a>
+                <div class="oś2">
+                    <div class="dane-opon">
+                        <label for="Przebieg">Producent opony</label>
+                        <input type="text"
+                                id="KM"
+                                name="KM"
+                                placeholder="Podaj wartość"/>
+                    </div>
+                    <div class="dane-opon">
+                        <label for="Paliwo">Szerokość opony</label>
+                        <input type="text"
+                                id="Paliwo"
+                                name="Paliwo"
+                                placeholder="Podaj wartość"/>
+                    </div>
+                    <div class="dane-opon">
+                        <label for="Przebieg">Profil opony</label>
+                        <input type="text"
+                                id="KM"
+                                name="KM"
+                                placeholder="Podaj wartość"/>
+                    </div>
+                    <div class="dane-opon">
+                        <label for="Paliwo">Srednica opony</label>
+                        <input type="text"
+                                id="Paliwo"
+                                name="Paliwo"
+                                placeholder="Podaj wartość"/>
+                    </div>
+                    <div class="dane-opon2">
+                        <p class="typ">Typ opony</p>
+                        <label><input type="radio" name="oponaTył"> Letnie</label>
+                        <label><input type="radio" name="oponaTył"> Zimowe</label>
+                        <label><input type="radio" name="oponaTył"> Wielosezonowe</label>
+                    </div>
+                    <div class="dane-felgi">
+                        <p class="typ">Typ felgi</p>
+                        <label><input type="radio" name="felgaTył"> Aluminiowe</label>
+                        <label><input type="radio" name="felgaTył"> Stalowe</label>
+                    </div>
+                </div>          
+            </div>
+            <div class="przyciski">
+                <div class="btn-wstecz">
+                    <a href="WydaniePojazduKierowca.html"><button class="wstecz">Wstecz</button></a>
+                </div>
+                <div class="btn-dalej">
+                    <a href="WydaniePojazduWyposazenie.html"><button class="dalej">Dalej</button></a>
+                </div>
+            </div>
+        </div>   
+    </section>
+</body>
+</html>

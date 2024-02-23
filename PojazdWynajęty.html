@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar/Wynajem</title>
+    <link rel="stylesheet" href="PojazdWynajęty.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <div class="logo1">
+            <a href="PrzypisaniePojazdu.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+        </div>
+        
+            <nav class="navbar1">
+                <ul>
+                    <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                    <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                    <li><div class="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="#Bell"><i class="fa-solid fa-bell"></i></a></li>
+                    <li><div class ="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="#Language">PL</a></li>
+                    <li><div class="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>  
+                <nav class="navbar2">
+                    <ul>
+                        <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                        <li><a href="#User">Uytkownik</a></li>
+                        <li><a href="#Bell">Powiadomienia</a></li>
+                        <li><a href="#Language">PL</a></li>
+                        <li><a href="#LogOut">Wyloguj</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar2 = document.querySelector(".navbar2");
+            navBar2.classList.toggle("active");
+        }
+    </script>
+    <header class="two">
+    </nav class="oknoNav">
+        <div class="okno">
+            <p class="przyp">Pojazd wynajęty</p>
+        </div>
+    <nav>
+</header>
+<section class="przypisanie">
+    <div class="okno2">
+        <div class="akapit">
+            <p class="napisakapit">POJAZD</p>
+        </div>
+        <img class="toyota" src="images/nissan_quashqai.png">
+        <div class="linia2"></div>
+        <form action="#">
+            <div class="informacja">
+                <div class="dane" id="NR">
+                    <label for="Company">Numer rejestracyjny</label>
+                    <input type="text"
+                            id="NR"
+                            name="NR"
+                            placeholder="Wprowadź numer rejestracyjny"/>
+                </div>
+                <div class="dane" id="oddzial">
+                    <label for="Adress">Oddział</label>
+                    <input type="text"
+                            id="oddial"
+                            name="oddzial"
+                            placeholder="Wprowadź oddział"/>
+                </div>
+                <div class="dane" id="nadwozie">
+                    <label for="nadwozie">Nadwozie</label>
+                    <input type="text"
+                            id="nadwozie"
+                            name="nadwozie"
+                            placeholder="Wprowadź typ nadwozia"/>
+                </div>
+                <div class="dane" id="marka">
+                    <label for="marka">Marka / Model</label>
+                    <input type="text"
+                            id="marka"
+                            name="Adress"
+                            placeholder="Wprowadź markę i model"/>
+                </div>
+                <div class="dane" id="segment">
+                    <label for="segment">Segment</label>
+                    <input type="text"
+                            id="segment"
+                            name="segment"
+                            placeholder="Wprowadź segment pojazdu"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="okno3">
+        <div class="akapit2">
+            <p class="napisakapit2">DANE KIEROWCY</p>
+        </div>
+        <form action="#">
+            <div class="informacja2">
+                <div class="dane2" id="imie">
+                    <label for="imie">Imię</label>
+                    <input type="text"
+                            id="imie"
+                            name="imie"
+                            placeholder="Wprowadź imię"/>
+                </div>
+                <div class="dane2" id="nazwisko">
+                    <label for="nazwisko">Nazwisko</label>
+                    <input type="text"
+                            id="nazwisko"
+                            name="nazwisko"
+                            placeholder="Wprowadź nazwisko"/>
+                </div>
+                <div class="dane2" id="miejscowosc">
+                    <label for="miejscowosc">Miejscowość</label>
+                    <input type="text"
+                            id="miejscowosc"
+                            name="miejscowosc"
+                            placeholder="Wprowadź miejscowość"/>
+                </div>
+                <div class="dane2" id="kod">
+                    <label for="kod">Kod pocztowy</label>
+                    <input type="text"
+                            id="kod"
+                            name="kod"
+                            placeholder="Wprowadź kod pocztowy"/>
+                </div>
+                <div class="dane2" id="ulica">
+                    <label for="segment">Ulica</label>
+                    <input type="text"
+                            id="ulica"
+                            name="ulica"
+                            placeholder="Wprowadź ulice"/>
+                </div>
+                 <div class="dane2" id="nrDomu">
+                    <label for="nrDomu">Numer domu</label>
+                    <input type="text"
+                            id="nrDomu"
+                            name="nrDomu"
+                            placeholder="Wprowadź numer domu"/>
+                </div>
+                <div class="dane2" id="nrMieszkania">
+                    <label for="nrMieszkania">Numer mieszkania</label>
+                    <input type="text"
+                            id="nrMieszkania"
+                            name="nrMieszkania"
+                            placeholder="Wprowadź numer mieszkania"/>
+                </div>
+            </div>
+        </form>
+        <div class="akapit3">
+            <p class="napisakapit2">DANE ADRESOWE</p>
+        </div>
+        <form class="form" action="#">
+            <div class="informacja2">
+                <div class="dane2" id="miejscowosc">
+                    <label for="miejscowosc">Miejscowość</label>
+                    <input type="text"
+                            id="miejscowosc"
+                            name="miejscowosc"
+                            placeholder="Wprowadź miejscowość"/>
+                </div>
+                <div class="dane2" id="kod">
+                    <label for="kod">Kod pocztowy</label>
+                    <input type="text"
+                            id="kod"
+                            name="kod"
+                            placeholder="Wprowadź kod pocztowy"/>
+                </div>
+                <div class="dane2" id="ulica">
+                    <label for="ulica">Ulica</label>
+                    <input type="text"
+                            id="ulica"
+                            name="ulica"
+                            placeholder="Wprowadź ulice"/>
+                </div>
+                <div class="dane2" id="nrDomu">
+                    <label for="nrDomu">Numer domu</label>
+                    <input type="text"
+                            id="nrDomu"
+                            name="nrDomu"
+                            placeholder="Wprowadź numer domu"/>
+                </div>
+                <div class="dane2" id="nrMieszkania">
+                    <label for="nrMieszkania">Numer miszkania</label>
+                    <input type="text"
+                            id="nrMieszkania"
+                            name="nrMieszkania"
+                            placeholder="Wprowadź numer miszkania"/>
+                </div>
+                 <div class="dane2" id="data">
+                    <label for="data">Data</label>
+                    <input type="text"
+                            id="data"
+                            name="data"
+                            placeholder="Wprowadź date"/>
+                </div>
+                <div class="dane2" id="nrMieszkania">
+                    <label for="nrMieszkania">Numer mieszkania</label>
+                    <input type="text"
+                            id="nrMieszkania"
+                            name="nrMieszkania"
+                            placeholder="Wprowadź numer mieszkania"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="okno4">
+        <div class="akapit4">
+            <p class="napisakapit2">MIEJSCE / GODZINA</p>
+        </div>
+        <table class="date">
+            <tr><td class="font">Miejsce wydania:</td></tr>
+            <tr><td><i class="fa-solid fa-arrow-right-long" style="color: #00aeae;"></i></td><td>Gdzie: Katowice Airport</td><td>Dzień: 12.02.2024</td></tr>
+            <tr><td class="width"></td></tr>
+            <tr><td class="font">Miejsce zdania:</td></tr>
+            <tr class="inf2"><td><i class="fa-solid fa-arrow-right-long" style="color: #00aeae;"></i></td><td>Gdzie: Katowice Airport</td><td>Dzień: 16.02.2024</td></tr>
+        </table>
+        <table class="date">
+            <tr><td class="font">Godzina wydania:</td></tr>
+            <tr><td><i class="fa-solid fa-arrow-right-long" style="color: #00aeae;"></i></td><td>Godzina: 12:00</td></tr>
+            <tr><td class="width"></td></tr>
+            <tr><td class="font">Godzina zdania:</td></tr>
+            <tr class="inf2"><td><i class="fa-solid fa-arrow-right-long" style="color: #00aeae;"></i></td><td>Godzina: 08:00</td></tr>
+        </table>
+        <div>
+            <div class="btn-zatwierdz">
+                <a href="PojazdyWynajete.html"><button>Zatwierdź</button></a>
+            </div>
+        </div> 
+    </div>  
+</section>
+</body>
+</html> 

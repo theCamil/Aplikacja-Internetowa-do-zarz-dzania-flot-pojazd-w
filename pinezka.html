@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dodawanie znaczników do obrazka</title>
+<style>
+    #colorPicker {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        padding: 10px;
+        border: 1px solid #ccc;
+        z-index: 1000;
+    }
+
+    .colorDot {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 5px;
+        cursor: pointer;
+        font-size: 0; /* ukryj tekst wewnątrz kropki */
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    .dot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .tooltip {
+        display: none;
+        position: absolute;
+        width: 200px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .tooltip textarea {
+        width: 100%;
+        border: none;
+        resize: vertical;
+    }
+</style>
+</head>
+<body>
+
+<div id="colorPicker">
+    <div class="colorDot" style="background-color: red;"></div>
+    <div class="colorDot" style="background-color: green;"></div>
+    <div class="colorDot" style="background-color: blue;"></div>
+    <div class="colorDot" style="background-color: gray;"></div>
+    <div class="colorDot" style="background-color: orange;"></div>
+    <div class="colorDot" style="background-color: yellow;"></div>
+</div>
+
+<div id="imageContainer">
+    <img id="myImage" src="images/car_damage.jpg" alt="Opis obrazu">
+</div>
+
+<script>
+    let currentColor = null;
+    let dotCounter = 0;
+
+    document.querySelector("#colorPicker").addEventListener("click", function(event) {
+        if (event.target.classList.contains('colorDot')) {
+            currentColor = event.target.style.backgroundColor;
+            document.getElementById("colorPicker").style.display = "none";
+        }
+    });
+
+    document.getElementById("myImage").addEventListener("click", function(event) {
+        let x = event.clientX - this.offsetLeft;
+        let y = event.clientY - this.offsetTop;
+
+        if (currentColor) {
+            addDot(currentColor, x, y);
+            currentColor = null;
+        } else {
+            document.getElementById("colorPicker").style.left = `${x}px`;
+            document.getElementById("colorPicker").style.top = `${y}px`;
+            document.getElementById("colorPicker").style.display = "block";
+        }
+    });
+
+    function addDot(color, x, y) {
+        let dot = document.createElement("div");
+        dot.id = `dot-${dotCounter}`;
+        dot.className = "dot";
+        dot.style.left = `${x}px`;
+        dot.style.top = `${y}px`;
+        dot.style.backgroundColor = color;
+
+        let tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.innerHTML = `
+            <textarea placeholder="Dodaj komentarz..."></textarea>
+            <button>Dodaj</button>
+        `;
+
+        dot.appendChild(tooltip);
+
+        dot.addEventListener("mouseover", function() {
+            tooltip.style.display = "block";
+        });
+
+        dot.addEventListener("mouseout", function() {
+            tooltip.style.display = "none";
+        });
+
+        dot.querySelector("button").addEventListener("click", function(event) {
+            event.stopPropagation();
+            let comment = tooltip.querySelector("textarea").value;
+            if (comment) {   
+                annotation.className = "annotation";
+                annotation.innerText = comment;
+                dot.appendChild(annotation);
+            }
+        });
+
+        document.getElementById("imageContainer").appendChild(dot);
+        dotCounter++;
+    }
+</script>
+</body>
+</html>
+

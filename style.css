@@ -1,0 +1,294 @@
+
+*,
+ *::before,
+  *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior:smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;   
+}
+.one{
+    position: sticky;
+    width:100%;
+    top:0;
+	height:8vh;
+	display:flex;
+	justify-content: space-between;
+	background:#1f2020;
+    align-items: center;
+    z-index: 1;
+}
+.logo1{
+    padding: 0 40px;
+}
+.fa-bell{
+    font-size: 1rem;
+    transition: 0.1s ease-in;
+}
+.fa-bell:hover{
+    color: #00aeae;
+}
+nav{
+    display:flex;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#d9d9d9;
+    font-size: 0.85rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    white-space: nowrap;
+    margin: 0 2vh;
+}
+nav ul li a:hover{
+    color:#00aeae;
+
+}
+nav ul li div{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    margin: 0 2vh;
+}
+.User{
+    position: absolute;
+    align-items: center;
+}
+.boxuser{
+    position: sticky;
+    width: 5vh;
+    height: 5vh;
+    background: #d9d9d9;
+    border-radius:100%;
+}
+.User .boxuser{
+    display: flex;
+}
+.two{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    height: 0vh;
+    top:11vh;
+    left:20vh;
+}
+.hamburger{
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 40px;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #d9d9d9;
+        margin: 6px 0;
+    }
+    .navbar1{
+        display: none;
+    }
+    header .navbar2{
+        height: 0;
+        position: absolute;
+        align-items: center;
+        right: 0;
+        width: 30vw;
+        background:#1f2020;
+        transition: 0.8s;
+        overflow: hidden;
+    }
+    .navbar2.active{
+        height: 400px;
+    }
+    .navbar2 ul{
+        display: block;
+        width: fit-content;
+        margin: 10px auto 0 auto;
+        text-align: center;
+    }
+    .navbar2 ul li a{
+        margin: 20px;
+        opacity: 0;
+    }
+    .navbar2.active li a{
+        opacity: 1;
+    }
+}
+.wybor-okno-glowne{
+    display: flex;
+    height: 92vh;
+    background: url(images/wallpaper6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+.wybor-okno-glowne .kafelek1-okno-glowne{
+    display: flex;
+    width: 50vh;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19px);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 5px;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+.akapit-okno-glowne{
+    width: 100%;
+    height: 10vh;
+    background-color: #00aeae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.przejdz-okno-glowne{
+    position: relative;
+    top: 27vh;
+    width: 35vh;
+    height: 4vh;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(250, 250, 250, 1);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in;
+}
+.przejdz-okno-glowne:hover{
+    background: #00aeae;
+    color: #fff;
+}
+.kafelek1-okno-glowne:hover{
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(19px);
+}
+.lista-okno-glowne{
+    list-style: none;
+    color: #fff;
+}
+.lista-okno-glowne .lista2-okno-glowne{
+    display: flex;
+    position: relative;
+    font-size: 0.9rem;
+    top: 18vh;
+}
+.lista2-okno-glowne:hover{
+    color: #00aeae;
+}
+.lista-okno-glowne .lista2-okno-glowne:before{
+    position: relative;
+    top:0;
+    content: "\2192";
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-block;
+    right: 2vh;
+}
+.fa-house{
+    font-size: 10rem;
+    position: relative;
+    top: 9vh;
+}
+.fa-car{
+    font-size: 10rem;
+    position: relative;
+    top: 9vh;
+}
+.fa-user-group{
+    font-size: 10rem;
+    position: relative;
+    top: 9vh;
+}
+.wybor-okno-glowne .kafelek2-okno-glowne{
+    display: flex;
+    width: 50vh;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19px);
+    margin: 0 7%;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.kafelek2-okno-glowne:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+.wybor-okno-glowne .kafelek3-okno-glowne{
+    display: flex;
+    width: 50vh;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19px);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.kafelek3-okno-glowne:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+.naglowek-okno-glowne{
+    position: relative;
+    text-align: center;
+    color: #00aeae;
+    font-size: 2rem;
+    top: 5vh;
+    font-family: sans-serif;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a:hover{
+    color: #00aeae;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar/Wynajem</title>
+    <link rel="stylesheet" href="PortalPracownikaDokumentyAneks.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <div class="logo1">
+            <a href="index.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+        </div>
+            <nav class="navbar1">
+                <ul>
+                    <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                    <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                    <li><div class="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="#Bell"><i class="fa fa-bell"></i></a></li>
+                    <li><div class ="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="#Language">PL</a></li>
+                    <li><div class="linia" style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                    <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>  
+                <nav class="navbar2">
+                    <ul>
+                        <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                        <li><a href="#User">Uytkownik</a></li>
+                        <li><a href="#Bell">Powiadomienia</a></li>
+                        <li><a href="#Language">PL</a></li>
+                        <li><a href="PanelLogowania.html">Wyloguj</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar2 = document.querySelector(".navbar2");
+            navBar2.classList.toggle("active");
+        }
+    </script>
+    <section class="tloaneks">
+        <section class="nawigacjaaneks">
+            <nav class="nawigacjaaneks">
+                <ul>
+                    <li><a href="PortalPracownika.html"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i><p class="napis">Start</p></a></li>
+                    <li><a href="PortalPracownikaUser.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i><p class="napis">Moje dane</p></a></li>
+                    <li><a href="PortalPracownikaKalendarz.html"><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i><p class="napis">Kalendarz</p></a></li>
+                    <li><a href="PortalPracownikaDokumenty.html"><i class="fa-solid fa-file" style="color: #ffffff;"></i><a class="dokumentynapis"><p>Dokumenty</p></a></a></li>
+                    <li><a href="PortalPracownikaUrlopy.html"><i class="fa-solid fa-umbrella-beach" style="color: #ffffff;"></i><p class="napis">Urlop</p></a></li>
+                    <li><a href="PortalPracownikaWniosek.html"><i class="fa-solid fa-file-import" style="color: #ffffff;"></i><p class="napis">Wnoski</p></a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="oknoaneks">
+            <div class="okno-dokumenty-aneks">
+                <nav class="opcje-wyboru-aneks">
+                    <ul>
+                        <li><a href="PortalPracownikaDokumenty.html"><p class="wyboraneks">Umowa</p></a></li>
+                        <li><a href="PortalPracownikaDokumentyPaski.html"><p class="wyboraneks">Paski płacowe</p></a></li>
+                        <li><a href="#"><p class="wybor1aneks">Aneksy do umowy</p></a></li>
+                    </ul>
+                </nav>
+                <div class="okienko1aneks"><p class="umowaaneks">Aneksy do umowy</p></div>
+                <div class="scrollboxaneks">
+                    <table class="tablica-aneks">
+                        <tr><td>Michał Kowalski</td><td>Podwyżka podstawy</td><td>Od 01.01.2023</td><td>Wystawione:</td><td>09.12.2022</td><td><a class="wybierz" href="AneksDoUmowy.html"><button class="choiceaneks" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>Michał Kowalski</td><td>Zmiana stanowskia</td><td>Od 01.09.2023</td><td>Wystawione:</td><td>11.08.2023</td><td><a class="wybierz" href="AneksDoUmowy.html"><button class="choiceaneks" type="submit">Wybierz</button></a></td></tr>
+                    </table> 
+                </div>
+            </div>
+        </section>
+    </section>
+</body> 
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+
+*,
+ *::before,
+  *::after{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior:smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;   
+}
+.one{
+    position: sticky;
+    width:100%;
+    top:0;
+	height:13vh;
+	display:flex;
+	justify-content: space-between;
+	background:#1f2020;
+    align-items: center;
+    z-index: 1;
+}
+.logo1{
+    padding: 0 40px;
+}
+.wybor-panel-logowania{
+    display: flex;
+    height: 87vh;
+    background: url(images/wall3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+.wybor-panel-logowania .kafelek1-panel-logowania{
+    display: flex;
+    width: 55vh;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19px);
+    transition: all 0.5s ease-in;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.kafelek2-panel-logowania{
+    width: 100%;
+    height: 5vh;
+    background-color: #00aeae;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.user-panel-logowania{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 8vh;
+}
+.boxuser-panel-logowania{
+    position: sticky;
+    width: 10vh;
+    height: 10vh;
+    background: #d9d9d9;
+    border-radius:100%;
+}
+.user-panel-logowania .boxuser-panel-logowania img{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.dane-kierowcy-panel-logowania{
+    display: flex;
+    flex-wrap: wrap;
+    width:40vh;
+    position: relative;
+    padding: 1.5vh;
+    top: 18vh;
+}
+.dane-kierowcy-panel-logowania label{
+    color: #fff;
+    font-size: 1rem;
+    padding-left: 1vh;
+}
+.dane-kierowcy-panel-logowania input{
+    height: 35px;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #d9d9d9;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #000;
+}
+.zaloguj-panel-logowania{
+    color: #00aeae;
+    position: relative;
+    top: 15vh;
+}
+.btn-panel-logowania{
+    padding-top: 23vh;
+}
+.btn-zaloguj-panel-logowania{
+    position: relative;
+    width: 65%;
+    height: 4vh;
+    transition: all 0.2s ease-in;
+    border: none;
+    color: #1f2020;
+    background: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.btn-zaloguj-panel-logowania:hover{
+    background: #00aeae;
+    color: #d9d9d9;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar</title>
+    <link rel="stylesheet" href="WydaniePojazduKierowca.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="Wynajem.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+        <nav>
+            <ul>
+                <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Bell"><i class="fa fa-bell"></i></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Language">PL</a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="two">
+        <nav class="navbar2">
+            <ul>
+                <li>
+                    <a href="WybórPojazduWydanie.html"><p>1. Wybór auta</p></a>
+                    <a href="WydaniePojazduNajemca.html"><p>2. Dane najmecy</p></a>
+                    <a href="#DaneKierowcy"><p class="kierowca">3. Dane kierowcy</p></a>
+                    <a href="WydaniePojazduPojazd.html"><p>4. Dane pojazdu</p></a>
+                    <a href="WydaniePojazduWyposazenie.html"><p>5. Wyposażenie pojazdu</p></a>
+                    <a href="WydaniePojazduStan.html"><p>6. Stan pojazdu</p></a>
+                    <a href="WydaniePojazduPodpis.html"><p>7. Podpis najemcy</p></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <Section class="bannerkierowca" id="bannerkierowca">
+        <div class="okno">
+            <div class="akapit">
+                <h2 class="tytul">DANE KIEROWCY</h2>
+            </div>
+            <form action="#">
+                <div class="info">
+                    <div class="dane-kierowcy">
+                        <label for="Name">Imię</label>
+                        <input type="text"
+                                id="Name"
+                                name="Name"
+                                placeholder="Wprowadź imię"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="Surname">Nazwisko</label>
+                        <input type="text"
+                                id="Surename"
+                                name="Surename"
+                                placeholder="Wprowadź nazwisko"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="City">Miasto zamieszkania</label>
+                        <input type="text"
+                                id="City"
+                                name="City"
+                                placeholder="Enter City"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="Country">Kraj</label>
+                        <input type="text"
+                                id="Country"
+                                name="Country"
+                                placeholder="Enter Country"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="Street">Ulica</label>
+                        <input type="text"
+                                id="Street"
+                                name="Street"
+                                placeholder="Enter Street"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="PostCode">Kod pocztowy</label>
+                        <input type="text"
+                                id="PostCode"
+                                name="PostCode"
+                                placeholder="Enter Post Code"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="Number">Nr domu</label>
+                        <input type="text"
+                                id="Number"
+                                name="Number"
+                                placeholder="Enter Number"/>
+                    </div>     
+                </div>
+                <div class="linia"></div>
+                <div class="dane2">
+                    <div class="dane-kierowcy">
+                        <label for="NumerDowodu">Numer dowodu</label>
+                        <input type="text"
+                                id="NumerDowodu"
+                                name="Numer"
+                                placeholder="Wprowadź numer dowodu"/>
+                    </div> 
+                    <div class="dane-kierowcy">
+                        <label for="NumerPaszportu">Numer pasportu</label>
+                        <input type="text"
+                                id="NumerPaszportu"
+                                name="NumerPaszportu"
+                                placeholder="Wprowadź numer paszportu"/>
+                    </div> 
+                    <div class="dane-kierowcy">
+                        <label for="Pesel">Numer pesel</label>
+                        <input type="text"
+                                id="Pesel"
+                                name="Pesel"
+                                placeholder="Wprowadź numer pesel"/>
+                    </div> 
+                    <div class="dane-kierowcy">
+                        <label for="NumerPrawaJazdy">Numer prawa jazdy</label>
+                        <input type="text"
+                                id="NumerPrawaJazdy"
+                                name="NumerPrawaJazdy"
+                                placeholder="Wprowadź numer prawa jazdy"/>
+                    </div> 
+                    <div class="dane-kierowcy">
+                        <label for="Email">Adres email</label>
+                        <input type="text"
+                                id="Email"
+                                name="Email"
+                                placeholder="Wprowadź email"/>
+                    </div> 
+                    <div class="dane-kierowcy">
+                        <label for="NumerPrawaJazdy">Numer telefonu</label>
+                        <input type="text"
+                                id="NumerTelefony"
+                                name="NumerTelefonu"
+                                placeholder="Wprowadź numer telefonu"/>
+                    </div> 
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <span>Firma </span><input type="checkbox" id="toggleCheckbox" />
+                    </label>
+                </div>
+                <div class="firma hidden" id="inputFirma">
+                    <div class="dane-kierowcy Company" id="inputCompany">
+                        <label for="Company">Nazwa firmy</label>
+                        <input type="text"
+                                id="Company"
+                                name="Company"
+                                placeholder="Wprowa∂ź nazwę firmy"/>
+                    </div>
+                    <div class="dane-kierowcy Adress" id="inputAdress">
+                        <label for="Adress">Adres zarejestrowania</label>
+                        <input type="text"
+                                id="Adress"
+                                name="Adress"
+                                placeholder="Wprowadź adres firmy"/>
+                    </div>
+                    <div class="dane-kierowcy NIP" id="inputNIP">
+                        <label for="NIP">Numer NIP</label>
+                        <input type="text"
+                                id="NIP"
+                                name="NIP"
+                                placeholder="Wprowadź NIP"/>
+                    </div>
+                    <div class="dane-kierowcy Regon" id="inputRegon">
+                        <label for="Regon">Nr domu</label>
+                        <input type="text"
+                                id="Regon"
+                                name="Regon"
+                                placeholder="Wprowadź REGON"/>
+                    </div>
+                </div>
+            </form>
+            <div class="btn-uzupełnij">
+                <a href="#"><button class="uzupełnij">Uzupełnij</button></a>
+            </div>
+            <div class="przyciski">
+                <div class="btn-wstecz">
+                    <a href="WydaniePojazduNajemca.html"><button class="wstecz">Wstecz</button></a>
+                </div>
+                <div class="btn-dalej">
+                    <a href="WydaniePojazduPojazd.html"><button class="dalej">Dalej</button></a>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <script src="app.js"></script>
+    <script>
+        // Pobierz checkbox i pola wpisywania
+        const toggleCheckbox = document.getElementById('toggleCheckbox');
+        const inputFields = document.getElementById('inputFields');
+    
+        // Dodaj obsługę zdarzenia zmiany stanu checkbox'a
+        toggleCheckbox.addEventListener('change', function() {
+          // Jeśli checkbox jest zaznaczony, pokaż pola wpisywania; w przeciwnym razie ukryj je
+          if (toggleCheckbox.checked) {
+            inputNIP.classList.remove('NIP');
+            inputCompany.classList.remove('Company');
+            inputRegon.classList.remove('Regon');
+            inputAdress.classList.remove('Adress');
+          } else {
+            inputNIP.classList.add('NIP');
+            inputCompany.classList.add('Company');
+            inputRegon.classList.add('Regon');
+            inputAdress.classList.add('Adress');
+          }
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexicar</title>
+    <link rel="stylesheet" href="StronaRezerwacji.css" />
+    <script src="https://kit.fontawesome.com/2feb493d11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="one">
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/flexicar-rent-low-resolution-logo-color-on-transparent-background 3.png" alt="Flexicar"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+        <nav>
+            <ul>
+                <li><a href="#User"><div class="User"><div class="boxuser"><img src="images/user-128-32.png" alt="Uzytkownik"/></div></a></li>
+                <li><a href="#User"><p><b>Michał Kowalski</b><br />Kierownik</p></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Bell"><i class="fa-solid fa-bell"></i></a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="#Language">PL</a></li>
+                <li><div style="border-left:1px solid #00aeae; height: 40px; width: 0;"></div></li>
+                <li><a href="PanelLogowania.html"><i class="fa-solid fa-arrow-right-from-bracket"> Wyloguj</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="two">
+        <nav class="navbar2"> <!-- Przesunąć cały do góry?? -->
+            <ul>
+                <li>
+                    <a href="StronaGłównaRezerwacji.html"><p>1.Rezerwacja</p></a>
+                    <a href="SelekcjaAuta.html"><p class="pojazd">2.Pojazd</p></a>
+                    <a href="WybórUbezpieczenia.html"><p>3.Ubezpieczenie</p></a>
+                    <a href="WybórWyposażenia.html"><p>4.Wyposażenie</p></a>
+                    <a href="TwojeDane.html"><p>5.Twoje dane</p></a>
+                    <a href="PodsumowanieZakupu.html"><p>6.Płatność</p></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <Section class="banner-wybor-pojazdu" id="banner">
+        <div class="okno-wybor-pojazdu">
+            <h2><a class="tytul2-wybor-pojazdu">Wybierz</a> Samochód</h2>
+            <div class="okienka-wybor-pojazdu">
+                <div class="kaf1-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Volkswagen Up</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Mini</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/volkswagen_up.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>147,99<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+                <div class="kaf2-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Toyota Yaris</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Miejski</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/toyota_yaris.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>147,99<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+                <div class="kaf3-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Kia Ceed</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Kompakt</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/kia_ceed.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>147,99<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+            </div>
+            <div class="okienka2-wybor-pojazdu">
+                <div class="kaf4-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Toyota corolla</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Sedan</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/toyota_corolla.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>147,99<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+                <div class="kaf5-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Forf Focus</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Kombi</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/ford_focus.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>147,99<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+                <div class="kaf6-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Renault Scenic</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Rodzinny</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/renault_gran_scenic.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>147,99<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+            </div>
+            <div class="okienka3-wybor-pojazdu">
+                <div class="kaf7-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Toyota CHR</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Crossover</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/toyota_chr.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>147,99<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+                <div class="kaf8-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Nissan Quashqai</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>SUV</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/nissan_quashqai.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>147,99<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+                <div class="kaf9-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Toyota Camry</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Limuzyna</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/toyota_camry.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>147,99<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+            </div>
+            <div class="okienka4-wybor-pojazdu">
+                <div class="kaf10-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Toyota Rav4</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Hybryda</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/toyota_rav4.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>147,99<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+                <div class="kaf11-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Renault Traffic</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Minivan</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/renault_traffic.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>207,61<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>230,68<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+                <div class="kaf12-wybor-pojazdu">
+                    <a class="opis-wybor-pojazdu"><b class="naglowek-wybor-pojazdu">Ford Transit</b> lub podobny</a><p class="opisdol-wybor-pojazdu"><b>Minivan +</b></p>
+                    <img class="auto-wybor-pojazdu" src="images/ford_transit.png">
+                    <div class="linia-wybor-pojazdu"></div>
+                    <div class="stawki-wybor-pojazdu">
+                        <table class="tabela-wybor-pojazdu">
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a><p class="cena-wybor-pojazdu"><b>218,22<sup> Eur</sup></b></p>
+                                </td>
+                                <td>
+                                    <a class="stawka-dobowa-wybor-pojazdu">Stawka dobowa:</a>
+                                    <p class="cena-wybor-pojazdu"><b>242,36<sup> Eur</sup></b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="selected-column-wybor-pojazdu">
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór1" checked="checked">
+                                    <label for="Wybór1" class="Label1-wybor-pojazdu">Zapłać teraz</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="Ubezpieczenie" id="Wybór2">
+                                    <label for="Wybór2" class="Label2-wybor-pojazdu">Zapłać później</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="WybórUbezpieczenia.html"><button class="wybierz-wybor-pojazdu">Wybierz</button></a>
+                </div>
+            </div>
+        </div>
+        
+    </Section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all radio buttons
+            const radioButtons = document.querySelectorAll('input[type="radio"]');
+    
+            // Attach click event listener to each radio button
+            radioButtons.forEach(function (radioButton) {
+                radioButton.addEventListener('click', function () {
+                // Get the index of the selected column
+                const columnIndex = Array.from(radioButton.parentNode.parentNode.children).indexOf(radioButton.parentNode);
+
+                // Remove the 'selected-column' class from all cells
+                const allCells = document.querySelectorAll('td');
+                allCells.forEach(function (cell) {
+                    cell.classList.remove('selected-column');
+                });
+
+                // Check if the radio button is checked
+                if (radioButton.checked) {
+                    // Add the 'selected-column' class to the cells in the selected column
+                    const selectedCells = document.querySelectorAll('td:nth-child(' + (columnIndex + 1) + ')');
+                    selectedCells.forEach(function (cell) {
+                        cell.classList.add('selected-column');
+                    });
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>

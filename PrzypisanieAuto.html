@@ -47,109 +47,115 @@
             navBar2.classList.toggle("active");
         }
     </script>
-    <header class="two-przypisanieAuto">
-    </nav class="oknoNav-przypisanieAuto">
-        <div class="okno-przypisanieAuto">
-            <p class="przyp-przypisanieAuto">Przypisanie pojazdu</p>
+    <header class="two">
+    </nav class="oknoNav">
+        <div class="okno">
+            <p class="przyp">Przypisanie pojazdu</p>
         </div>
     <nav>
 </header>
-<section class="przypisanie-przypisanieAuto">
-    <div class="okno2-przypisanieAuto">
-        <div class="akapit-przypisanieAuto">
-            <p class="napisakapit-przypisanieAuto">POJAZD</p>
+<section class="przypisanie">
+    <div class="okno2">
+        <div class="akapit">
+            <p class="napisakapit">POJAZD</p>
         </div>
-        <img class="toyota-przypisanieAuto" src="images/nissan_quashqai.png">
-        <div class="linia2-przypisanieAuto"></div>
+        <img class="WybranyCar" id="carImage" src="images/nissan_quashqai.png">
+        <div class="linia2"></div>
         <form action="#">
-            <div class="informacja-przypisanieAuto">
-                <div class="dane-przypisanieAuto" id="NR">
+            <div class="informacja">
+                <!--id div'u i input'u nie mogą być takie same inaczej skrypt nie działa-->
+                <div class="dane" id="NR">
                     <label for="Company">Numer rejestracyjny</label>
                     <input type="text"
-                            id="NR"
+                            id="NR-informacje"
                             name="NR"
-                            placeholder="Wprowadź numer rejestracyjny"/>
+                            readonly="readonly"
+                            placeholder="Rejestracja"/>
                 </div>
-                <div class="dane-przypisanieAuto" id="oddzial">
+                <div class="dane" id="Oddzial">
                     <label for="Adress">Oddział</label>
                     <input type="text"
-                            id="oddial"
-                            name="oddzial"
-                            placeholder="Wprowadź oddział"/>
+                            id="oddzial-informacje"
+                            name="Oddział"
+                            readonly="readonly"
+                            placeholder="Oddział"/>
                 </div>
-                <div class="dane-przypisanieAuto" id="nadwozie">
+                <div class="dane" id="nadwozie">
                     <label for="nadwozie">Nadwozie</label>
                     <input type="text"
-                            id="nadwozie"
+                            id="nadwozie-informacje"
                             name="nadwozie"
-                            placeholder="Wprowadź typ nadwozia"/>
+                            readonly="readonly"
+                            placeholder="Typ nadwozia"/>
                 </div>
-                <div class="dane-przypisanieAuto" id="marka">
+                <div class="dane" id="marka">
                     <label for="marka">Marka / Model</label>
                     <input type="text"
-                            id="marka"
+                            id="marka-informacje"
                             name="Adress"
-                            placeholder="Wprowadź markę i model"/>
+                            readonly="readonly"
+                            placeholder="Marka i model"/>
                 </div>
-                <div class="dane-przypisanieAuto" id="segment">
+                <div class="dane" id="segment">
                     <label for="segment">Segment</label>
                     <input type="text"
-                            id="segment"
+                            id="segment-informacje"
                             name="segment"
-                            placeholder="Wprowadź segment pojazdu"/>
+                            readonly="readonly"
+                            placeholder="Segment pojazdu"/>
                 </div>
             </div>
         </form>
     </div>
-    <div class="okno3-przypisanieAuto">
-        <div class="akapit2-przypisanieAuto">
-            <p class="napisakapit2-przypisanieAuto">DANE NAJEMCY</p>
+    <div class="okno3">
+        <div class="akapit2">
+            <p class="napisakapit2">DANE NAJEMCY</p>
         </div>
         <form action="#">
-            <div class="informacja2-przypisanieAuto">
-                <div class="dane2-przypisanieAuto" id="imie">
+            <div class="informacja2">
+                <div class="dane2" id="imie">
                     <label for="imie">Imię</label>
                     <input type="text"
                             id="imie"
                             name="imie"
                             placeholder="Wprowadź imię"/>
                 </div>
-                <div class="dane2-przypisanieAuto" id="nazwisko">
+                <div class="dane2" id="nazwisko">
                     <label for="nazwisko">Nazwisko</label>
                     <input type="text"
                             id="nazwisko"
                             name="nazwisko"
                             placeholder="Wprowadź nazwisko"/>
                 </div>
-                <div class="dane2-przypisanieAuto" id="miejscowosc">
+                <div class="dane2" id="miejscowosc">
                     <label for="miejscowosc">Miejscowość</label>
                     <input type="text"
                             id="miejscowosc"
                             name="miejscowosc"
                             placeholder="Wprowadź miejscowość"/>
                 </div>
-                <div class="dane2-przypisanieAuto" id="kod">
+                <div class="dane2" id="kod">
                     <label for="kod">Kod pocztowy</label>
                     <input type="text"
                             id="kod"
                             name="kod"
                             placeholder="Wprowadź kod pocztowy"/>
                 </div>
-                <div class="dane2-przypisanieAuto" id="ulica">
+                <div class="dane2" id="ulica">
                     <label for="segment">Ulica</label>
                     <input type="text"
                             id="ulica"
                             name="ulica"
                             placeholder="Wprowadź ulice"/>
                 </div>
-                 <div class="dane2-przypisanieAuto" id="nrDomu">
+                 <div class="dane2" id="nrDomu">
                     <label for="nrDomu">Numer domu</label>
                     <input type="text"
                             id="nrDomu"
                             name="nrDomu"
                             placeholder="Wprowadź numer domu"/>
                 </div>
-                <div class="dane2-przypisanieAuto" id="nrMieszkania">
+                <div class="dane2" id="nrMieszkania">
                     <label for="nrMieszkania">Numer mieszkania</label>
                     <input type="text"
                             id="nrMieszkania"
@@ -158,54 +164,54 @@
                 </div>
             </div>
         </form>
-        <div class="akapit3-przypisanieAuto">
-            <p class="napisakapit2-przypisanieAuto">DANE ADRESOWE</p>
+        <div class="akapit3">
+            <p class="napisakapit2">DANE ADRESOWE</p>
         </div>
-        <form class="form-przypisanieAuto" action="#">
-            <div class="informacja2-przypisanieAuto">
-                <div class="dane2-przypisanieAuto" id="miejscowosc">
+        <form class="form" action="#">
+            <div class="informacja2">
+                <div class="dane2" id="miejscowosc">
                     <label for="miejscowosc">Miejscowość</label>
                     <input type="text"
                             id="miejscowosc"
                             name="miejscowosc"
                             placeholder="Wprowadź miejscowość"/>
                 </div>
-                <div class="dane2-przypisanieAuto" id="kod">
+                <div class="dane2" id="kod">
                     <label for="kod">Kod pocztowy</label>
                     <input type="text"
                             id="kod"
                             name="kod"
                             placeholder="Wprowadź kod pocztowy"/>
                 </div>
-                <div class="dane2-przypisanieAuto" id="ulica">
+                <div class="dane2" id="ulica">
                     <label for="ulica">Ulica</label>
                     <input type="text"
                             id="ulica"
                             name="ulica"
                             placeholder="Wprowadź ulice"/>
                 </div>
-                <div class="dane2-przypisanieAuto" id="nrDomu">
+                <div class="dane2" id="nrDomu">
                     <label for="nrDomu">Numer domu</label>
                     <input type="text"
                             id="nrDomu"
                             name="nrDomu"
                             placeholder="Wprowadź numer domu"/>
                 </div>
-                <div class="dane2-przypisanieAuto" id="nrMieszkania">
+                <div class="dane2" id="nrMieszkania">
                     <label for="nrMieszkania">Numer miszkania</label>
                     <input type="text"
                             id="nrMieszkania"
                             name="nrMieszkania"
                             placeholder="Wprowadź numer miszkania"/>
                 </div>
-                 <div class="dane2-przypisanieAuto" id="data">
+                 <div class="dane2" id="data">
                     <label for="data">Data</label>
                     <input type="text"
                             id="data"
                             name="data"
                             placeholder="Wprowadź date"/>
                 </div>
-                <div class="dane2-przypisanieAuto" id="nrMieszkania">
+                <div class="dane2" id="nrMieszkania">
                     <label for="nrMieszkania">Numer mieszkania</label>
                     <input type="text"
                             id="nrMieszkania"
@@ -214,82 +220,131 @@
                 </div>
             </div>
         </form>
-        <div class="btn-zatwierdz-przypisanieAuto">
+        <div class="btn-zatwierdz">
             <a href="PrzypisaniePojazdu.html"><button>Zatwierdź</button></a>
         </div>
     </div>
-    <div class="okno4-przypisanieAuto">
-        <div class="akapit4-przypisanieAuto">
-            <p class="napisakapit2-przypisanieAuto">MIEJSCE / GODZINA</p>
+    <div class="okno4">
+        <div class="akapit4">
+            <p class="napisakapit2">MIEJSCE / GODZINA</p>
         </div>
         <form action="#">
-            <div class="inf1-przypisanieAuto">
-                <div class="info-przypisanieAuto">
-                    <div class="dane-kierowcy-przypisanieAuto">
-                        <label for="Miejscowosc">Miejscowość <b class="kolor-przypisanieAuto">WYDANIA POJAZDU</b></label>
+            <div class="inf1">
+                <div class="info">
+                    <div class="dane-kierowcy">
+                        <label for="Miejscowosc">Miejscowość <b class="kolor">WYDANIA POJAZDU</b></label>
                         <input type="text"
                              id="Miejscowosc"
                                 name="Miejscowosc"
                                 placeholder="Wprowadź miejscowość"/>
                     </div>
-                    <div class="dane-kierowcy-przypisanieAuto">
+                    <div class="dane-kierowcy">
                         <label for="Kod">Kod pocztowy</label>
                         <input type="text"
                              id="Kod"
                                 name="Kod"
                                 placeholder="Wprowadź kod"/>
                     </div>
-                    <div class="dane-kierowcy-przypisanieAuto">
+                    <div class="dane-kierowcy">
                         <label for="Ulica">Ulica</label>
                         <input type="text"
                              id="Ulica"
                                 name="Ulica"
                                 placeholder="Wprowadź ulice"/>
                     </div>
-                    <div class="dane-kierowcy-przypisanieAuto">
+                    <div class="dane-kierowcy">
                         <label for="startDate">Data rozpoczęcia najmu:</label>
                         <input type="date" id="startDate" name="startDate" required>
                     </div>
-                    <div class="dane-kierowcy-przypisanieAuto">
+                    <div class="dane-kierowcy">
                         <label for="startTime">Godzina rozpoczęcia najmu:</label>
-                        <input type="time" id="OdKiedy" class="OdKiedy-przypisanieAuto" min="00:00" max="T00:00">
-                        <div class="linia3-przypisanieAuto"></div>
+                        <input type="time" id="OdKiedy" class="OdKiedy" min="00:00" max="T00:00">
+                        <div class="linia3"></div>
                     </div>
                 <div>
-                <div class="info2-przypisanieAuto">
-                    <div class="dane-kierowcy-przypisanieAuto">
-                        <label for="Miejscowosc">Miejscowość <b class="kolor-przypisanieAuto">ZDANIA POJAZDU</b></label>
+                <div class="info2">
+                    <div class="dane-kierowcy">
+                        <label for="Miejscowosc">Miejscowość <b class="kolor">ZDANIA POJAZDU</b></label>
                         <input type="text"
                              id="Miejscowosc"
                                 name="Miejscowosc"
                                 placeholder="Wprowadź miejscowość"/>
                     </div>
-                    <div class="dane-kierowcy-przypisanieAuto">
+                    <div class="dane-kierowcy">
                         <label for="Kod">Kod pocztowy</label>
                         <input type="text"
                              id="Kod"
                                 name="Kod"
                                 placeholder="Wprowadź kod"/>
                     </div>
-                    <div class="dane-kierowcy-przypisanieAuto">
+                    <div class="dane-kierowcy">
                         <label for="Ulica">Ulica</label>
                         <input type="text"
                              id="Ulica"
                                 name="Ulica"
                                 placeholder="Wprowadź ulice"/>
                     </div>
-                    <div class="dane-kierowcy-przypisanieAuto">
+                    <div class="dane-kierowcy">
                         <label for="startDate">Data rozpoczęcia najmu:</label>
-                        <input class="inputDate-przypisanieAuto" type="date" id="startDate" name="startDate" required>
+                        <input class="inputDate" type="date" id="startDate" name="startDate" required>
                     </div>
-                    <div class="dane-kierowcy-przypisanieAuto">
+                    <div class="dane-kierowcy">
                         <label for="startTime">Godzina rozpoczęcia najmu:</label>
-                        <input class="inputTime-przypisanieAuto" type="time" id="OdKiedy" class="OdKiedy-przypisanieAuto" min="00:00" max="T00:00">
+                        <input class="inputTime" type="time" id="OdKiedy" class="OdKiedy" min="00:00" max="T00:00">
                     </div>
                 </div>
             </div>            
         </form> 
-    </div>   
+    </div>  
+    
 </section>
+
+<script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    function setCarInfo() {
+        console.log("setCarInfo function called"); // Log that the function is called
+
+        var carNumberInput = document.getElementById('NR-informacje');
+        var carOddzialInput = document.getElementById('oddzial-informacje');
+        var carNadwozieInput = document.getElementById('nadwozie-informacje');
+        var carMarkaInput = document.getElementById('marka-informacje');
+        var carSegmentInput = document.getElementById('segment-informacje');
+        var carType = getParameterByName('car');
+
+        console.log("carType:", carType); // Log the carType to check if it's retrieved correctly
+
+        var carImage = document.getElementById('carImage');
+        switch (carType) {
+            case 'car1':
+                carImage.src = "images/toyota_corolla_mini.png";
+                carNumberInput.placeholder = "KK2879W";
+                carOddzialInput.placeholder = "KATOWICE";
+                carNadwozieInput.placeholder = "Sedan";
+                carMarkaInput.placeholder = "Toyota Corolla";
+                carSegmentInput.placeholder = "C";
+                break;
+            case 'car2':
+                carImage.src = "images/bmw.png";
+                carNumberInput.placeholder = "WW10D97";
+                carOddzialInput.placeholder = "WARSZAWA";
+                carNadwozieInput.placeholder = "Suv";
+                carMarkaInput.placeholder = "BMW X5";
+                carSegmentInput.placeholder = "D";
+                break;
+        }
+    }
+
+    window.onload = setCarInfo;
+</script>
+
 </body> 
 </html>

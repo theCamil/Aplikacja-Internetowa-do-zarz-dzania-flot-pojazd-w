@@ -170,7 +170,7 @@ nav ul li div{
         opacity: 1;
     }
 }
-.przypisanie-przypisaniePojazdu{
+.przypisanie{
     display: flex;
     height: 95vh;
     background: url(images/wallpaper1.jpg);
@@ -181,7 +181,7 @@ nav ul li div{
     align-items: center;
     justify-content: center;
 }
-.okno2-przypisaniePojazdu{
+.okno2{
     display: flex;
     width: 130vh;
     height: 75vh;
@@ -191,7 +191,7 @@ nav ul li div{
     justify-content: center;
     border-radius: 5px;
 }
-.akapit-przypisaniePojazdu{
+.akapit{
     width: 100%;
     height: 5vh;
     background-color: #00aeae;
@@ -199,13 +199,13 @@ nav ul li div{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
-.tekstakapit-przypisaniePojazdu{
+.tekstakapit{
     color: #fff;
     position: relative;
     top: 1vh;
     font-size: 1.2rem;
 }
-.searchbar-przypisaniePojazdu{
+.searchbar{
     width: 70vh;
     height: 4vh;
     background: rgba(255, 255, 255, 0.9) ;
@@ -215,7 +215,7 @@ nav ul li div{
     left: 30vh;
     top: 8vh;
 }
-.searchbar-przypisaniePojazdu input{
+.searchbar input{
     background: transparent;
     flex: 1;
     border: 0;
@@ -224,7 +224,7 @@ nav ul li div{
     color: #000;
     font-size: 1rem;
 }
-.searchbar-przypisaniePojazdu button {
+.searchbar button {
     border: 0;
     background: rgba(0, 0, 0, 0.1);
     position: relative;
@@ -234,12 +234,12 @@ nav ul li div{
     cursor: pointer;
     transition: 0.2s ease-in;
 }
-.searchbar-przypisaniePojazdu button:hover{
+.searchbar button:hover{
     background-color: #00aeae;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.scrollbox-przypisaniePojazdu{
+.scrollbox{
     display: flex;
     background: #fff;
     width: 130vh;
@@ -249,7 +249,7 @@ nav ul li div{
     overflow: scroll;
     justify-content: center;
 }
-.navinfo-przypisaniePojazdu{
+.navinfo{
     width: 100%;
     height: 6vh;
     position: relative;
@@ -257,38 +257,38 @@ nav ul li div{
     top:15vh;
     background-color: #1f2020;
 }
-.tabela1-przypisaniePojazdu tr{
+.tabela1 tr{
     background: rgba(0, 0, 0, 0);
 }
-.tabela1-przypisaniePojazdu tr td{
+.tabela1 tr td{
     text-align: center;
 }
-.tabela1-przypisaniePojazdu .tr-przypisaniePojazdu:hover{
+.tabela1 .tr:hover{
     background: none;
 }
-.navinfo .a-przypisaniePojazdu a{
+.navinfo .a a{
     margin: 0 28px;
     font-size: 1rem;
     position: relative;
     right:3vh;
 }
-.a1-przypisaniePojazdu{
+.a1{
     position: relative;
     right:2vh;
 }
-.a2-przypisaniePojazdu{
+.a2{
     position: relative;
     right:3vh;
 }
-.a3-przypisaniePojazdu{
+.a3{
     position: relative;
     left: 0vh;
 }
-.a4-przypisaniePojazdu{
+.a4{
     position: relative;
     left: 1vh;
 }
-.a5-przypisaniePojazdu{
+.a5{
     position: relative;
     left: -0.5vh;
 }
@@ -299,14 +299,14 @@ table{
     justify-content: center;
     text-align: center;
 }
-.choice1-przypisaniePojazdu{
+.choice1{
     width: 14vh;
     height: 3.5vh;
     color:rgba(0, 0, 0, 0);
     background: rgba(0, 0, 0, 0.0);
     border: none;
 }
-.choice-przypisaniePojazdu{
+.choice{
     width: 15vh;
     height: 3.5vh;
     background: #fff;
@@ -319,7 +319,7 @@ table{
     transition: all 0.2s ease-in;
     border-radius: 5px;
 }
-.choice-przypisaniePojazdu:hover{
+.choice:hover{
     background: #00aeae;
     color: #fff;
 }
@@ -336,7 +336,7 @@ table tr td{
     border: none;
     height: 5vh;
 }
-.wybierz-przypisaniePojazdu{
+.wybierz{
     text-decoration: none;
     color: #1f2020;
 }

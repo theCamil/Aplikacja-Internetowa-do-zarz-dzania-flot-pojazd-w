@@ -47,11 +47,337 @@
         </nav>
     </header>
     <section class="bannerpojazd" id="bannerpojazd">
-        <div class="okno">
-            <div class="akapit">
-                <h2 class="tytul">DANE PODSTAWOWE</h2>
+        <!--KATALOGWYBÓRPOJAZDU-->
+        <div class="okno" id="okno1">
+            <div class="scroll">
+                <div class="akapitKatalog"><a class=tekstakapit>Wybierz samochód do wydania</a></div>
+                <form action="" class="searchbar">
+                    <input type="text" placeholder=" Wyszukaj...">
+                    <button type="submit"><img src="images/search2.png" alt=""></button>
+                </form>
+                <div class="navinfo">
+                    <table class="tabela1">
+                        <tr class="tr"><td class="a1">Nr rejestracji</td><td class="a2">Oddział</td><td class="a3">Nadwozie</td><td class="a4">Marka/Model</td><td class="a5">Seg.</td><td><button class="choice1" type="submit">Wybierz<a href="PrzypisanieAuto.html"></a></td></tr>
+                    </table>
+                </div>
+                <div class="scrollbox">
+                    <table>
+                        <tr><td>KK2879W</td><td>Katowice</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><<button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>WW10D97</td><td>warszawa</td><td>Suv</td><td>BMW X5</td><td>D</td><td><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KKL80W2</td><td>Warszawa</td><td>Combi</td><td>Toyota Corolla</td><td>C</td><td><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>POLK873</td><td>Katowice</td><td>Sedan</td><td>Toyota Camry</td><td>E</td><td><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KKM897W</td><td>Katowice</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz" href="WydaniePojazduNajemca.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KK5279A</td><td>Opole</td><td>Compact</td><td>Kia Ceed</td><td>B</td><td><a class="wybierz" href="WydaniePojazduNajemca.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>WW89K21</td><td>Katowice</td><td>Van</td><td>Toyota ProAce</td><td>F</td><td><a class="wybierz" href="WydaniePojazduNajemca.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KK902ML</td><td>Kraków</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz" href="WydaniePojazduNajemca.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KKM98L21</td><td>Kraków</td><td>Sedan</td><td>BMW Serii 3</td><td>C</td><td><a class="wybierz" href="WydaniePojazduNajemca.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>WW4TR35</td><td>Katowice</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz" href="WydaniePojazduNajemca.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KK430BW</td><td>Katowice</td><td>Compact</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz" href="WydaniePojazduNajemca.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                    </table>      
+                </div>
             </div>
-            <div class="info">
+        </div>  
+        <!--NAJEMCA-->
+        <div class="okno" id="okno2">
+            <div class="akapit">
+                <h2 class="tytulNajemca">DANE NAJEMCY</h2>
+            </div>
+            <form action="#">
+                <div class="infoNajemca">
+                    <div class="dane-najemcy">
+                        <label for="NameNajemca">Imię</label>
+                        <input type="text"
+                                id="NameNajemca"
+                                name="NameNajemca"
+                                placeholder="Wprowadź imię"/>
+                    </div>
+                    <div class="dane-najemcy">
+                        <label for="SurnameNajemca">Nazwisko</label>
+                        <input type="text"
+                                id="SurenameNajemca"
+                                name="SurenameNajemca"
+                                placeholder="Wprowadź nazwisko"/>
+                    </div>
+                    <div class="dane-najemcy">
+                        <label for="CityNajemca">Miasto zamieszkania</label>
+                        <input type="text"
+                                id="CityNajemca"
+                                name="CityNajemca"
+                                placeholder="Enter City"/>
+                    </div>
+                    <div class="dane-najemcy">
+                        <label for="CountryNajemca">Kraj</label>
+                        <input type="text"
+                                id="CountryNajemca"
+                                name="CountryNajemca"
+                                placeholder="Enter Country"/>
+                    </div>
+                    <div class="dane-najemcy">
+                        <label for="StreetNajemca">Ulica</label>
+                        <input type="text"
+                                id="StreetNajemca"
+                                name="StreetNajemca"
+                                placeholder="Enter Street"/>
+                    </div>
+                    <div class="dane-najemcy">
+                        <label for="PostCodeNajemca">Kod pocztowy</label>
+                        <input type="text"
+                                id="PostCodeNajemca"
+                                name="PostCodeNajemca"
+                                placeholder="Enter Post Code"/>
+                    </div>
+                    <div class="dane-najemcy">
+                        <label for="NumberNajemca">Nr domu</label>
+                        <input type="text"
+                                id="NumberNajemcaNajemca"
+                                name="NumberNajemcaNajemca"
+                                placeholder="Enter Number"/>
+                    </div>     
+                </div>
+                <div class="liniaNajemca"></div>
+                <div class="dane2">
+                    <div class="dane-najemcy">
+                        <label for="NumerDowodu">Numer dowodu</label>
+                        <input type="text"
+                                id="NumerDowoduNajemca"
+                                name="NumerDowoduNajemca"
+                                placeholder="Wprowadź numer dowodu"/>
+                    </div> 
+                    <div class="dane-najemcy">
+                        <label for="NumerPaszportuNajemca">Numer pasportu</label>
+                        <input type="text"
+                                id="NumerPaszportuNajemca"
+                                name="NumerPaszportuNajemca"
+                                placeholder="Wprowadź numer paszportu"/>
+                    </div> 
+                    <div class="dane-najemcy">
+                        <label for="PeselNajemca">Numer pesel</label>
+                        <input type="text"
+                                id="PeselNajemca"
+                                name="PeselNajemca"
+                                placeholder="Wprowadź numer pesel"/>
+                    </div> 
+                    <div class="dane-najemcy">
+                        <label for="NumerPrawaJazdyNajemca">Numer prawa jazdy</label>
+                        <input type="text"
+                                id="NumerPrawaJazdyNajemca"
+                                name="NumerPrawaJazdyNajemca"
+                                placeholder="Wprowadź numer prawa jazdy"/>
+                    </div> 
+                    <div class="dane-najemcy">
+                        <label for="EmailNajemca">Adres email</label>
+                        <input type="text"
+                                id="EmailNajemca"
+                                name="EmailNajemca"
+                                placeholder="Wprowadź email"/>
+                    </div> 
+                    <div class="dane-najemcy">
+                        <label for="NumerTelefonuNajemca">Numer telefonu</label>
+                        <input type="text"
+                                id="NumerTelefonyNajemca"
+                                name="NumerTelefonuNajemca"
+                                placeholder="Wprowadź numer telefonu"/>
+                    </div> 
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <span>Firma </span><input type="checkbox" id="toggleCheckboxNajemca" />
+                    </label>
+                </div>
+                <div class="firma hidden" id="inputFirmaNajemca">
+                    <div class="dane-najemcy CompanyNajemca" id="inputCompanyNajemca">
+                        <label for="CompanyNajemca">Nazwa firmy</label>
+                        <input type="text"
+                                id="CompanyNajemca"
+                                name="CompanyNajemca"
+                                placeholder="Wprowadź nazwę firmy"/>
+                    </div>
+                    <div class="dane-najemcy AdressNajemca" id="inputAdressNajemca">
+                        <label for="AdressNajemca">Adres zarejestrowania</label>
+                        <input type="text"
+                                id="AdressNajemca"
+                                name="AdressNajemca"
+                                placeholder="Wprowadź adres firmy"/>
+                    </div>
+                    <div class="dane-najemcy NIPNajemca" id="inputNIPNajemca">
+                        <label for="NIPNajemca">Numer NIP</label>
+                        <input type="text"
+                                id="NIPNajemca"
+                                name="NIPNajemca"
+                                placeholder="Wprowadź NIP"/>
+                    </div>
+                    <div class="dane-najemcy RegonNajemca" id="inputRegonNajemca">
+                        <label for="RegonNajemca">REGON</label>
+                        <input type="text"
+                                id="RegonNajemca"
+                                name="RegonNajemca"
+                                placeholder="Wprowadź REGON"/>
+                    </div>
+                </div>
+            </form>
+            <div class="przyciski">
+                <div class="btn-dalej">
+                    <button onclick="nextWindow('okno3')">Dalej</button></a>
+                </div>
+            </div>
+            
+        </div>
+        <!--KIEROWCA-->
+        <div class="okno" id="okno3">
+            <div class="akapitKierowca">
+                <h2 class="tytulKierowca">DANE KIEROWCY</h2>
+            </div>
+            <form action="#">
+                <div class="infoKierowca">
+                    <div class="dane-kierowcy">
+                        <label for="NameKierowca">Imię</label>
+                        <input type="text"
+                                id="NameKierowca"
+                                name="NameKierowca"
+                                placeholder="Wprowadź imię"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="SurnameKierowca">Nazwisko</label>
+                        <input type="text"
+                                id="SurenameKierowca"
+                                name="SurenameKierowca"
+                                placeholder="Wprowadź nazwisko"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="CityKierowca">Miasto zamieszkania</label>
+                        <input type="text"
+                                id="CityKierowca"
+                                name="CityKierowca"
+                                placeholder="Enter City"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="CountryKierowca">Kraj</label>
+                        <input type="text"
+                                id="CountryKierowca"
+                                name="CountryKierowca"
+                                placeholder="Enter Country"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="StreetKierowca">Ulica</label>
+                        <input type="text"
+                                id="StreetKierowca"
+                                name="StreetKierowca"
+                                placeholder="Enter Street"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="PostCodeKierowca">Kod pocztowy</label>
+                        <input type="text"
+                                id="PostCodeKierowca"
+                                name="PostCodeKierowca"
+                                placeholder="Enter Post Code"/>
+                    </div>
+                    <div class="dane-kierowcy">
+                        <label for="NumberKierowca">Nr domu</label>
+                        <input type="text"
+                                id="NumberKierowca"
+                                name="NumberKierowca"
+                                placeholder="Enter Number"/>
+                    </div>     
+                </div>
+                <div class="liniaKierowca"></div>
+                <div class="dane2Kierowca">
+                    <div class="dane-kierowcy">
+                        <label for="NumerDowoduKierowca">Numer dowodu</label>
+                        <input type="text"
+                                id="NumerDowoduKierowca"
+                                name="NumerDowoduKierowca"
+                                placeholder="Wprowadź numer dowodu"/>
+                    </div> 
+                    <div class="dane-kierowcy">
+                        <label for="NumerPaszportuKierowca">Numer pasportu</label>
+                        <input type="text"
+                                id="NumerPaszportuKierowca"
+                                name="NumerPaszportuKierowca"
+                                placeholder="Wprowadź numer paszportu"/>
+                    </div> 
+                    <div class="dane-kierowcy">
+                        <label for="PeselKierowca">Numer pesel</label>
+                        <input type="text"
+                                id="PeselKierowca"
+                                name="PeselKierowca"
+                                placeholder="Wprowadź numer pesel"/>
+                    </div> 
+                    <div class="dane-kierowcy">
+                        <label for="NumerPrawaJazdy">Numer prawa jazdy</label>
+                        <input type="text"
+                                id="NumerPrawaJazdy"
+                                name="NumerPrawaJazdy"
+                                placeholder="Wprowadź numer prawa jazdy"/>
+                    </div> 
+                    <div class="dane-kierowcy">
+                        <label for="EmailKierowca">Adres email</label>
+                        <input type="text"
+                                id="EmailKierowca"
+                                name="EmailKierowca"
+                                placeholder="Wprowadź email"/>
+                    </div> 
+                    <div class="dane-kierowcy">
+                        <label for="NumerTelefonuKierowca">Numer telefonu</label>
+                        <input type="text"
+                                id="NumerTelefonyKierowca"
+                                name="NumerTelefonuKierowca"
+                                placeholder="Wprowadź numer telefonu"/>
+                    </div> 
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <span>Firma </span><input type="checkbox" id="toggleCheckboxKierowca" />
+                    </label>
+                </div>
+                <div class="firmaKierowca hidden" id="inputFirmaKierowca">
+                    <div class="dane-kierowcy CompanyKierowca" id="inputCompanyKierowca">
+                        <label for="CompanyKierowca">Nazwa firmy</label>
+                        <input type="text"
+                                id="CompanyKierowca"
+                                name="CompanyKierowca"
+                                placeholder="Wprowa∂ź nazwę firmy"/>
+                    </div>
+                    <div class="dane-kierowcy AdressKierowca" id="inputAdressKierowca">
+                        <label for="AdressKierowca">Adres zarejestrowania</label>
+                        <input type="text"
+                                id="AdressKierowcaKierowca"
+                                name="AdressKierowca"
+                                placeholder="Wprowadź adres firmy"/>
+                    </div>
+                    <div class="dane-kierowcy NIPKierowca" id="inputNIPKierowca">
+                        <label for="NIPKierowca">Numer NIP</label>
+                        <input type="text"
+                                id="NIPKierowca"
+                                name="NIPKierowca"
+                                placeholder="Wprowadź NIP"/>
+                    </div>
+                    <div class="dane-kierowcy RegonKierowca" id="inputRegonKierowca">
+                        <label for="RegonKierowca">Nr domu</label>
+                        <input type="text"
+                                id="RegonKierowca"
+                                name="RegonKierowca"
+                                placeholder="Wprowadź REGON"/>
+                    </div>
+                </div>
+            </form>
+            <div class="btn-uzupełnij">
+                <a href="#"><button class="uzupełnij">Uzupełnij</button></a>
+            </div>
+            <div class="przyciski">
+                <div class="btn-wstecz">
+                    <a href="WydaniePojazduNajemca.html"><button class="wstecz">Wstecz</button></a>
+                </div>
+                <div class="btn-dalej">
+                    <button button onclick="nextWindow('okno4')">Dalej</button>
+                </div>
+            </div>
+        </div>
+        <!--POJAZDDANE-->
+        <div class="okno" id="okno4">
+            <div class="akapitPojazd">
+                <h2 class="tytulPojazd">DANE PODSTAWOWE</h2>
+            </div>
+            <div class="infoPojazd">
                 <div class="dane-pojazdu">
                     <label for="Przebieg">Przebieg</label>
                     <input type="text"
@@ -67,7 +393,7 @@
                             placeholder="%"/>
                 </div>
             </div>
-            <div class="info2">
+            <div class="info2Pojazd">
                 <div class="opis">
                     <div class="czysty">Czysty na zewnątrz</div>
                 </div>
@@ -86,7 +412,7 @@
                 <div class="odp">
                     <a class="tak">Nie</a><input class="input" type="checkbox" name=""><a class="nie">Tak</a>
                 </div>
-                <div class="akapit2">
+                <div class="akapit2Pojazd">
                     <h2 class="tytul2">KOŁA I OPONY</h2>
                 </div>
                 <div class="opis2">
@@ -185,10 +511,420 @@
                     <a href="WydaniePojazduKierowca.html"><button class="wstecz">Wstecz</button></a>
                 </div>
                 <div class="btn-dalej">
-                    <a href="WydaniePojazduWyposazenie.html"><button class="dalej">Dalej</button></a>
+                    <button onclick="nextWindow('okno5')">Dalej</button></a>
                 </div>
             </div>
-        </div>   
+        </div>
+        <!--WYPOSAZENIEPOJAZDU-->
+        <div class="okno" id="okno5">
+            <div class="akapitWyposazenie">
+                <h2 class="tytulWyposazenie">WYPOSAŻENIE PODSTAWOWE</h2>
+            </div>
+            <form action="#">
+                <div class="infoWyposazenie">
+                    <div class="dane">
+                        <label><input type="checkbox" name="DokumentRejestracyjny"><a class="text">Dokument rejestracyjny</a><label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Gasnica"><a class="text">Gaśnica</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Trojkat"><a class="text">Trójkąt ostrzegawczy</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Apteczka"><a class="text">Apteczka</a></label>
+                    </div>
+                </div>
+            </form>
+            <div class="akapit2Wyposazenie">
+                <h2 class="tytulWyposazenie">WYPOSAŻENIE DODATKOWE</h2>
+            </div>
+            <form action="#">
+                <div class="info2Wyposazenie">
+                    <div class="dane">
+                        <label><input type="checkbox" name="Antena"><a class="text">Antena</a><label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Podnosnik"><a class="text">Podnośnik</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Zestaw"><a class="text">Zestaw naprawczy</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Roleta"><a class="text">Roleta/półka bagaznika</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Zapas"><a class="text">Koło zapasowe</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Gps"><a class="text">GPS</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Gwarancja"><a class="text">Ksiąka gwarancyjna</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Instrukcja"><a class="text">Instrukcja obsługi</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Dywaniki"><a class="text">Dywaniki</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Karta"><a class="text">Karta nawigacji</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Koło dojazdowe"><a class="text">Koło zapasowe dojazdowe</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Hak"><a class="text">Hak holowniczy</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Walizka"><a class="text">Walizka narzędziowa</a></label>
+                    </div>
+                    <div class="dane">
+                        <label><input type="checkbox" name="Skrobak"><a class="text">Skrobak do szyb</a></label>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="przyciski">
+                <div class="btn-wstecz">
+                    <a href="WydaniePojazduPojazd.html"><button class="wstecz">Wstecz</button></a>
+                </div>
+                <div class="btn-dalej">
+                    <button onclick="nextWindow('okno6')">Dalej</button></a>
+                </div>
+            </div>
+        </div> 
+        <!--STANPOJAZDU-->
+        <div class="okno" id="okno6">
+            <h2 class="tytułStan">USZKODZENIA POJAZDU</h2>
+            <div id="colorPicker">
+                <div class="colorDot" style="background-color: red;"></div>
+                <div class="colorDot" style="background-color: green;"></div>
+                <div class="colorDot" style="background-color: blue;"></div>
+                <div class="colorDot" style="background-color: gray;"></div>
+                <div class="colorDot" style="background-color: orange;"></div>
+                <div class="colorDot" style="background-color: yellow;"></div>
+            </div>
+            
+            <div id="imageContainer" class="formatka-uszkodzenia">
+                <img id="myImage" src="images/car-line-draw-insurance-rent-damage-condition-report-form_510486-111.jpg.webp" alt="Opis obrazu">
+            </div>
+            <h3 class="legenda">Legenda:</h3>
+            <div class="okienka">
+                <div id="okienko-red"></div>
+                <span>- Rysa</span>
+                <div id="okienko-green"></div>
+                <span>- Wgniecenie</span>
+                <div id="okienko-purple"></div>
+                <span>- Odprysk</span>
+                <div id="okienko-yellow"></div>
+                <span>- Otarcie</span>
+                <div id="okienko-orange"></div>
+                <span>- Pęknięcie</span>
+                <div id="okienko-grey"></div>
+                <span>- Awaria</span>
+            </div>
+            
+            <div class="przyciski">
+                <div class="deleteBtns">
+                        <button type="button" id="deleteAllBtn" class="delete-btn1" >Delete All Dots</button>
+                            <!-- ... other HTML ... -->
+                            <!-- Make sure to replace '${dotId}' with the actual dotId variable -->
+                            <button onclick="deleteDot('${dotId}')" class="delete-btn2">Delete This Dot</button>
+                </div>
+                <div class="btn-wstecz">
+                    <button  type="button" onclick="location.href='WydaniePojazduWyposazenie.html'">Wstecz</button>
+                </div>
+                <div class="btn-dalej">
+                    <button onclick="nextWindow('okno7')">Dalej</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <!--PODPISWYDANIAPOJAZDU-->
+        <div class="okno" id="okno7">
+            <div class="akapitPodpis">
+                <h2 class="tytulPodpis">PODPISANIE UMOWY NAJMU POJAZDU</h2>
+            </div>
+            <div class="frame">
+                <iframe id="pdfFrame" src="https://mozilla.github.io/pdf.js/web/viewer.html?file=ścieżka/do/pliku.pdf"></iframe>
+            </div>  
+            <div class="przyciski">
+                <div class="btn-wstecz">
+                    <a href="WydaniePojazduStan.html"><button class="wstecz">Wstecz</button></a>
+                </div>
+                <div class="btn-dalej">
+                    <button onclick="nextWindow('okno8')" class="zakoncz">Zakończ</button>
+                </div>
+            </div>
+        </div>  
     </section>
+    <!--FIRMANAJEMCA-->
+    <script>
+        // Pobierz checkbox i pola wpisywania
+        const toggleCheckboxNajemca = document.getElementById('toggleCheckboxNajemca');
+        const inputFieldsNajemca = document.getElementById('inputFields');
+    
+        // Dodaj obsługę zdarzenia zmiany stanu checkbox'a
+        toggleCheckboxNajemca.addEventListener('change', function() {
+          // Jeśli checkbox jest zaznaczony, pokaż pola wpisywania; w przeciwnym razie ukryj je
+          if (toggleCheckboxNajemca.checked) {
+            inputNIPNajemca.classList.remove('NIPNajemca');
+            inputCompanyNajemca.classList.remove('CompanyNajemca');
+            inputRegonNajemca.classList.remove('RegonNajemca');
+            inputAdressNajemca.classList.remove('AdressNajemca');
+          } else {
+            inputNIPNajemca.classList.add('NIPNajemca');
+            inputCompanyNajemca.classList.add('CompanyNajemca');
+            inputRegonNajemca.classList.add('RegonNajemca');
+            inputAdressNajemca.classList.add('AdressNajemca');
+          }
+        });
+      </script>
+      <!--FIRMAKIEROWCA-->
+    <script>
+        // Pobierz checkbox i pola wpisywania
+        const toggleCheckbox = document.getElementById('toggleCheckboxKierowca');
+        const inputFields = document.getElementById('inputFields');
+    
+        // Dodaj obsługę zdarzenia zmiany stanu checkbox'a
+        toggleCheckbox.addEventListener('change', function() {
+          // Jeśli checkbox jest zaznaczony, pokaż pola wpisywania; w przeciwnym razie ukryj je
+          if (toggleCheckbox.checked) {
+            inputNIPKierowca.classList.remove('NIPKierowca');
+            inputCompanyKierowca.classList.remove('CompanyKierowca');
+            inputRegonKierowca.classList.remove('RegonKierowca');
+            inputAdressKierowca.classList.remove('AdressKierowca');
+          } else {
+            inputNIPKierowca.classList.add('NIPKierowca');
+            inputCompanyKierowca.classList.add('CompanyKierowca');
+            inputRegonKierowca.classList.add('RegonKierowca');
+            inputAdressKierowca.classList.add('AdressKierowca');
+          }
+        });
+      </script>
+      <!--SPA-->
+    <script>
+         function nextWindow(currentWindowId) {
+            var currentWindow = document.getElementById(currentWindowId);
+            var nextWindowId = "okno" + (parseInt(currentWindowId.replace("okno", "")) + 1);
+
+            currentWindow.style.display = "none";
+
+            var nextWindow = document.getElementById(nextWindowId);
+            if (nextWindow) {
+                nextWindow.style.display = "block";
+            } else {
+                alert("Koniec okien");
+            }
+        }
+    </script>
+    <script>
+        let currentColor = null;
+        let dotCounter = 0;
+        let timer;
+
+        document.getElementById("deleteAllBtn").addEventListener("click", function(event){
+            localStorage.clear(); 
+            dotCounter = 0;
+        })
+
+        document.querySelector("#colorPicker").addEventListener("click", function(event) {
+            if (event.target.classList.contains('colorDot')) {
+                currentColor = event.target.style.backgroundColor;
+                this.style.display = "none";
+            }
+        });
+
+        document.getElementById("myImage").addEventListener("click", function(event) {
+            let rect = this.getBoundingClientRect();
+            let x = event.clientX - rect.left;
+            let y = event.clientY - rect.top;
+
+            // Wyczyść interwał czasowy (jeśli istnieje) i ustaw ponownie
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                document.getElementById("colorPicker").style.display = "none";
+            }, 5000); // Ukryj panel po 5 sekundach bez interakcji
+
+
+            if (currentColor) {
+                addDot(currentColor, x, y);
+                currentColor = null;
+            } else {
+                let colorPicker = document.getElementById("colorPicker");
+                
+                // Ustawienie paska kolorów dokładnie pod kursorem
+                colorPicker.style.left = `${event.pageX}px`;
+                colorPicker.style.top = `${event.pageY}px`;
+                colorPicker.style.display = "block";
+            }
+        });
+    
+        function addDot(color, x, y) {
+            let dot = document.createElement("div");
+            dot.id = `dot-${dotCounter}`;
+            dot.className = "dot";
+            dot.style.left = `${x}px`;
+            dot.style.top = `${y}px`;
+            dot.style.backgroundColor = color;
+
+            localStorage.setItem(`dot-${dotCounter}`, JSON.stringify({ color, x, y }));
+    
+            let tooltip = document.createElement("div");
+            tooltip.className = "tooltip";
+            tooltip.innerHTML = `
+                <textarea placeholder="Dodaj komentarz..."></textarea>
+                <button>Dodaj</button>
+            `;
+
+            let comment = tooltip.querySelector("textarea").value;
+            if (comment) {
+                annotation.className = "annotation";
+                annotation.innerText = comment;
+                dot.appendChild(annotation);
+
+                // Zapisz komentarz w localStorage
+                let dotData = {
+                    color: color,
+                    x: x,
+                    y: y,
+                    comment: comment
+                };
+
+                localStorage.setItem(`dot-${dotCounter}`, JSON.stringify(dotData));
+            }
+    
+            dot.appendChild(tooltip);
+    
+            dot.addEventListener("mouseover", function() {
+                tooltip.style.display = "block";
+                let comment = dot.dataset.comment;
+                if (comment) {
+                    let tooltip = document.querySelector(".tooltip");
+                    tooltip.innerHTML = `<div class="annotation">${comment}</div>`;
+                    tooltip.style.display = "block";
+                }
+
+            });
+    
+            dot.addEventListener("mouseout", function() {
+                tooltip.style.display = "none";
+                let annotation = dot.querySelector(".annotation");
+                if (annotation) {
+                    dot.removeChild(annotation);
+                }
+            });
+    
+            dot.querySelector("button").addEventListener("click", function(event) {
+                event.stopPropagation();
+                let comment = tooltip.querySelector("textarea").value;
+                if (comment) {   
+                    annotation.className = "annotation";
+                    annotation.innerText = comment;
+                    dot.appendChild(annotation);
+                    saveComment(dot.id, comment);  // Zapisz komentarz w localStorage
+                    // Zapisz informacje o znaczniku w localStorage
+                    let dotData = {
+                        color: color,
+                        x: x,
+                        y: y,
+                        comment: comment
+                    };
+                    localStorage.setItem(`dot-${dotCounter}`, JSON.stringify(dotData));
+                }
+            });
+
+            
+            document.getElementById("imageContainer").appendChild(dot);
+            dotCounter++;
+
+            document.addEventListener("DOMContentLoaded", function() {
+                // Wczytaj zapisane znaczniki z localStorage
+                for (let i = 0; i < localStorage.length; i++) {
+                    let key = localStorage.key(i);
+                    if (key.startsWith("dot-")) {
+                        let data = JSON.parse(localStorage.getItem(key));
+                        addDot(data.color, data.x, data.y);
+                        // Jeśli jest komentarz, dodaj go do znacznika
+                        if (data.comment) {
+                            let dot = document.getElementById(`dot-${dotCounter - 1}`); // dotCounter został zwiększony w addDot
+                            let annotation = document.createElement("div");
+                            annotation.className = "annotation";
+                            annotation.innerText = data.comment;
+                            dot.appendChild(annotation);
+                        }
+                    }
+                }
+            });
+
+        }
+        function loadDots() {
+            for (let i = 0; i < localStorage.length; i++) {
+                let key = localStorage.key(i);
+                if (key.startsWith("dot-")) {
+                   let data = JSON.parse(localStorage.getItem(key));
+                    addDot(data.color, data.x, data.y);
+                }
+            }
+        }
+        function saveComment(dotId, comment) {
+            localStorage.setItem(dotId, comment);
+        }
+        function loadComments() {
+            for (let i = 0; i < localStorage.length; i++) {
+                let dotId = localStorage.key(i);
+                let comment = localStorage.getItem(dotId);
+                let dot = document.getElementById(dotId);
+                if (dot) {
+                    dot.dataset.comment = comment;
+                }
+            }
+        }
+        // Funkcja do dodawania komentarza do znacznika
+        function addComment(dot, comment) {
+            let tooltip = dot.querySelector(".tooltip");
+            if (tooltip) {
+                tooltip.innerHTML += `<div class="annotation">${comment}</div>`;
+            }
+        }
+        
+        // Wywołanie funkcji po załadowaniu strony
+        window.onload = function() {
+            loadComments();
+        };
+        window.addEventListener("load", loadDots);
+
+        //Usuwanie znacznika z poziomu chmurki
+        tooltip.innerHTML = `
+            <div class="annotation">${comment}</div>
+            <button class="deleteBtn">Usuń</button>
+        `;
+
+        //funkcja usuwania z localStorage
+        function deleteComment(dotId) {
+            localStorage.removeItem(dotId);
+        }
+
+        
+
+        // Function to delete individual dot
+        function deleteDot(dotId) {
+            let dot = document.getElementById(dotId);
+            if (dot) {
+                let confirmation = confirm("Are you sure you want to delete this dot?");
+                if (confirmation) {
+                    let imageContainer = document.getElementById("imageContainer");
+                    imageContainer.removeChild(dot); // Remove dot from the container
+                    localStorage.removeItem(dotId); // Remove dot from localStorage
+                }
+            }
+        }
+
+        document.getElementById("deleteAllBtn").addEventListener("click", deleteAllDots);
+
+    </script>
 </body>
 </html>

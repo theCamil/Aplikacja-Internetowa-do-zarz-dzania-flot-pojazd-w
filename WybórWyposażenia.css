@@ -17,7 +17,7 @@ body {
     justify-content: center;
     font-family: "Poppins", sans-serif;
 }
-.banner-wybor-wyposazenie{
+.banner{
     display: flex;
     height: 120vh;
     background: url(images/background6.jpg);
@@ -141,7 +141,7 @@ nav ul li div{
 .wyposazenie{
     color:#00aeae;
 }
-.okno-wybor-wyposazenie{
+.okno{
     width: 86%;
     height: 100%;
     max-width: 1920px;
@@ -162,7 +162,7 @@ h2{  /* Pozycja napisu 'tytul' */
     right: 1vw;
     font-size: 2rem;
 }
-.tytul-wybor-wyposazenie{
+.tytul{
     color:#00aeae;
     -index: 9999999;
 }
@@ -189,9 +189,9 @@ button:hover{
     background-color: #00aeae;
     background-position: -100% 100%;
 }
-.miniOkno1-wybor-wyposazenie {
+.miniOkno1 {
     background: #fff;
-    display: inline-block;
+    display: inline;
     width: 75vw;
     height: 13vh;
     position: absolute;
@@ -199,7 +199,7 @@ button:hover{
     top: 15vh;
     border-radius: 5px;
 }
-.miniOkno2-wybor-wyposazenie {
+.miniOkno2 {
     background: #fff;
     display: inline-block;
     width: 75vw;
@@ -209,7 +209,7 @@ button:hover{
     top: 35vh;
     border-radius: 5px;
 }
-.miniOkno3-wybor-wyposazenie {
+.miniOkno3 {
     background: #fff;
     display: inline-block;
     width: 75vw;
@@ -219,7 +219,7 @@ button:hover{
     top: 55vh;
     border-radius: 5px;
 }
-.miniOkno4-wybor-wyposazenie {
+.miniOkno4 {
     background: #fff;
     display: inline-block;
     width: 75vw;
@@ -245,7 +245,7 @@ input[type="checkbox"]:checked {
     background-color: #00aeae;
     transition: 0.5s;
 }
-.opcja1-wybor-wyposazenie {
+.opcja1 {
     position: relative;
     display: inline-block;
     left: 63vw;
@@ -254,13 +254,24 @@ input[type="checkbox"]:checked {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.OpisOpcji-wybor-wyposazenie {
-    top: -5vh;
+.OpisOpcji {
+    top: -8.5vh;
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+    font-size: 1rem;    
+    width: 54vw;
+    height: 11.5vh;
+    
+    margin-top: px;
+}
+.ikona {
     position: relative;
     margin-left: 15px;
-    font-size: 1rem;    
-    width: 60vw;
-    height: 11.5vh;
+    display: block;
+    top: -1.8vh;
+    height: 40px;
+    width: 40px;
 }
 label { 
     display: flex; 
@@ -279,7 +290,15 @@ label {
     font-size: 1.2rem;
     /*font-weight: bold; */
 }
-.opcja2-wybor-wyposazenie {
+.Cena4 {
+    display: flex;
+    position: absolute;
+    
+    width: 5.2vw;
+    margin-right: 15%;
+    font-size: 1dvi;
+}
+.opcja2 {
     position: relative;
     display: inline-block;
     left: 63vw;
@@ -289,7 +308,7 @@ label {
     margin-bottom: 5px;
     
 }
-.opcja3-wybor-wyposazenie {
+.opcja3 {
     position: relative;
     display: inline-block;
     left: 63vw;
@@ -298,7 +317,7 @@ label {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.opcja4-wybor-wyposazenie {
+.opcja4 {
     position: relative;
     display: inline-block;
     left: 63vw;

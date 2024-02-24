@@ -86,7 +86,7 @@ nav ul li div{
 .User .boxuser{
     display: flex;
 }
-.two-przypisanieAuto{
+.two{
     display: flex;
     position: fixed;
     z-index: 2;
@@ -138,7 +138,7 @@ nav ul li div{
         opacity: 1;
     }
 }
-.okno-przypisanieAuto{
+.okno{
     display: flex;
     width: 100%;
     padding: 1vh;
@@ -146,11 +146,11 @@ nav ul li div{
     background: rgba(0, 174, 174, 0);
     position: sticky;
 }
-.okno-przypisanieAuto .przyp-przypisanieAuto{
+.okno .przyp{
     color: #fff;
     font-size: 1.2rem;
 }
-.akapit-przypisanieAuto{
+.akapit{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,12 +161,12 @@ nav ul li div{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
-.napisakapit-przypisanieAuto{
+.napisakapit{
     display: flex;
     position: relative;
     color: #fff;
 }
-.okno-przypisanieAuto p{
+.okno p{
     justify-content: center;
     align-items: center;
     position: relative;
@@ -174,7 +174,7 @@ nav ul li div{
     color: #fff;
     font-size: 20px;
 }
-.przypisanie-przypisanieAuto{
+.przypisanie{
     display: flex;
     height: 135vh;
     background: url(images/background7.jpg);
@@ -183,7 +183,7 @@ nav ul li div{
     background-repeat: no-repeat;
     justify-content: center;
 }
-.okno2-przypisanieAuto{
+.okno2{
     display: flex;
     position: relative;
     top: 9vh;
@@ -195,23 +195,23 @@ nav ul li div{
     align-items: center;
     border-radius: 5px;
 }
-.linia2-przypisanieAuto{
+.linia2{
     width: 90%;
     top: 3vh;
     position: relative;
     border-bottom: solid 2px #00aeae;
 }
-.linia3-przypisanieAuto{
+.linia3{
     width: 100%;
     top: 6vh;
     right: 5px;
     position: relative;
     border-bottom: solid 2px #00aeae;
 }
-.informacja-przypisanieAuto{
+.informacja{
     margin-top: 10vh;
 }
-.okno2-przypisanieAuto .napis-przypisanieAuto{
+.okno2 .napis{
     display: flex;
     position: relative;
     color: #00aeae;
@@ -219,18 +219,18 @@ nav ul li div{
     font-family: Arial, Helvetica, sans-serif;
     top: 8vh;
 }
-.dane-przypisanieAuto{
+.dane{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding-bottom: 20px;
 }
-.dane-przypisanieAuto label{
+.dane label{
     width: 95%;
     color: #fff;
     margin: 5px 0;
 }
-.dane-przypisanieAuto input{
+.dane input{
     height: 35px;
     width: 95%;
     border-radius: 7px;
@@ -238,7 +238,7 @@ nav ul li div{
     border: 1px solid #fff;
     padding: 0 10px;
 }
-.okno3-przypisanieAuto{
+.okno3{
     display: flex;
     position: relative;
     top: 9vh;
@@ -253,7 +253,7 @@ nav ul li div{
     margin-left: 20px;
     border-radius: 5px;
 }
-.akapit2-przypisanieAuto{
+.akapit2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,18 +264,18 @@ nav ul li div{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
-.napisakapit2-przypisanieAuto{
+.napisakapit2{
     display: flex;
     position: relative;
     color: #fff;
 }
-.okno3-przypisanieAuto .napis-przypisanieAuto{
+.okno3 .napis{
     display: flex;
     position: relative;
     color: #00aeae;
     font-size: 2rem;
 }
-.informacja2-przypisanieAuto{
+.informacja2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -283,10 +283,10 @@ nav ul li div{
     top:-10vh;
     padding: 5vh;
 }
-.dane2-przypisanieAuto:nth-child(2n){
+.dane2:nth-child(2n){
     justify-content: end;
 }
-.dane2-przypisanieAuto{
+.dane2{
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -294,12 +294,12 @@ nav ul li div{
     position: relative;
     top: 10vh;
 }
-.dane2-przypisanieAuto label{
+.dane2 label{
     width: 95%;
     color: #fff;
     margin: 5px 0;
 }
-.dane2-przypisanieAuto input{
+.dane2 input{
     height: 35px;
     width: 95%;
     border-radius: 7px;
@@ -307,7 +307,7 @@ nav ul li div{
     border: 1px solid #fff;
     padding: 0 10px;
 }
-.akapit3-przypisanieAuto{
+.akapit3{
     display: flex;
     position: relative;
     justify-content: center;
@@ -337,7 +337,7 @@ a{
     text-decoration: none;
     color: #fff;
 }
-.okno4-przypisanieAuto{
+.okno4{
     display: flex;
     width: 22%;
     height: 92.5%;
@@ -349,7 +349,7 @@ a{
     flex-direction: column;
     align-items: center;
 }
-.akapit4-przypisanieAuto{
+.akapit4{
     display: flex;
     position: relative;
     justify-content: center;
@@ -361,14 +361,14 @@ a{
     border-top-right-radius: 5PX;
     border-top-left-radius: 5px;
 }
-.info-przypisanieAuto{
+.info{
     display: flex;
     flex-wrap: wrap;
     top:4vh;
     position: relative;
     justify-content: center;
 }
-.dane-kierowcy-przypisanieAuto{
+.dane-kierowcy{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -376,12 +376,12 @@ a{
     padding: 1vh 1vw;
     margin-left: 0.5vw;
 }
-.dane-kierowcy-przypisanieAuto label{
+.dane-kierowcy label{
     width: 100%;
     color: #fff;
     margin: 5px 5px;
 }
-.dane-kierowcy-przypisanieAuto input{
+.dane-kierowcy input{
     height: 35px;
     width: 97%;
     border-radius: 5px;
@@ -389,13 +389,17 @@ a{
     border: 1px solid #fff;
     padding: 0 10px;
 }
-.kolor-przypisanieAuto{
+.kolor{
     color: #00aeae;
 }
-.info2-przypisanieAuto{
+.info2{
     display: flex;
     flex-wrap: wrap;
     top:9vh;
     position: relative;
     justify-content: center;
+}
+.WybranyCaar {
+    max-width: 200px;
+    max-height: 100px;
 }

@@ -31,21 +31,22 @@
             </ul>
         </nav>
     </header>
-    <header class="two-glowna-rezerwacji">
-        <nav class="navbar2-glowna-rezerwacji"> <!-- Przesunąć cały do góry?? -->
+    <header class="two">
+        <nav class="navbar2"> <!-- Przesunąć cały do góry?? -->
             <ul>
                 <li>
                     <a href="NaszeAuta.html"><p>Nasze Auta</p></a>
-                    <a href="NaszeUsługi.html"><p>Nasze Usługi</p></a>
-                    <a href="ONas.html"><p>O Nas<!-- Albo Kontakt bylby lepszy bo "O nas" dziwnie wygląda --></p></a>
-                    <a href="Kontakt.html"><p>Kontakt</p></a>
+                    <a href="WydaniePojazduKierowca.html"><p>Nasze Usługi</p></a>
+                    <a href="WydaniePojazduPojazd.html"><p>Aktualności</p></a>
+                    <a href="WydaniePojazduStan.html"><p>O Nas<!-- Albo Kontakt bylby lepszy bo "O nas" dziwnie wygląda --></p></a>
+                    <a href="#PodpisNajemcy"><p>FAQ</p></a>
                 </li>
             </ul>
         </nav>
     </header>
-    <Section class="banner-glowna-rezerwacji" id="banner">
-        <div class="slider-glowna-rezerwacji">
-            <div class="slides-glowna-rezerwacji"> 
+    <Section class="banner" id="banner">
+        <div class="slider">
+            <div class="slides"> 
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
@@ -70,25 +71,25 @@
                 <div class="slide">
                     <img src="images/mercedes_classE_przycięte.jpg" alt="">
                 </div>
-                <div class="navigation-auto-glowna-rezerwacji">
-                    <div class="auto-btn1-glowna-rezerwacji"></div>
-                    <div class="auto-btn2-glowna-rezerwacji"></div>
-                    <div class="auto-btn3-glowna-rezerwacji"></div>
-                    <div class="auto-btn4-glowna-rezerwacji"></div>
-                    <div class="auto-btn5-glowna-rezerwacji"></div>
-                    <div class="auto-btn6-glowna-rezerwacji"></div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
                 </div>
-                <div class="navigation-manual-glowna-rezerwacji">
-                    <label for="radio1" class="manual-btn-glowna-rezerwacji"></label>
-                    <label for="radio2" class="manual-btn-glowna-rezerwacji"></label>
-                    <label for="radio3" class="manual-btn-glowna-rezerwacji"></label>
-                    <label for="radio4" class="manual-btn-glowna-rezerwacji"></label>
-                    <label for="radio5" class="manual-btn-glowna-rezerwacji"></label>
-                    <label for="radio6" class="manual-btn-glowna-rezerwacji"></label>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
                 </div>  
             </div>
-            <div class="okno-glowna-rezerwacji">
-                <h2 class="tytul-glowna-rezerwacji"><a class="nowa-glowna-rezerwacji">Nowa</a> Rezerwacja</h2>
+            <div class="okno">
+                <h2 class="tytul"><a class="nowa">Nowa</a> Rezerwacja</h2>
                 <span class="GodzinaOdbioru" id="GodzinaOdbioru">Godzina odbioru</span>
                 <input type="datetime-local" id="OdKiedy" class="OdKiedy" min="00:00" max="T00:00">
                 <span class="GodzinaZwrotu" id="GodzinaZwrotu">Godzina zwrotu</span>
@@ -134,7 +135,7 @@
                     <option value="Zachodnio-Pomorskie">Województwo Zachodnio-Pomorskie</option>
                 </select>
                 <button onclick="location.href = 'StronaRezerwacji.html';">Szukaj</button>
-                <div class="checkbox-glowna-rezerwacji">
+                <div class="checkbox">
                     <label>
                         <input type="checkbox" id="toggleCheckbox" /><span style="float: right; margin: -1px 5px;"> Inne miejsce zwrotu</span>
                     </label>
@@ -204,5 +205,26 @@
         });
 
     </script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        // Add event listener to the select element
+        document.getElementById('select').addEventListener('change', function() {
+            var selectedLocation = this.value;
+            // Store or process the selected location
+            localStorage.setItem('selectedLocation', selectedLocation);
+        });
+    
+        // Add event listeners to the datetime-local inputs
+        document.getElementById('OdKiedy').addEventListener('change', function() {
+            var pickupDate = this.value;
+            // Store or process the pickup date
+            localStorage.setItem('pickupDate', pickupDate);
+        });
+    
+        document.getElementById('DoKiedy').addEventListener('change', function() {
+            var returnDate = this.value;
+            // Store or process the return date
+            localStorage.setItem('returnDate', returnDate);
+        });
+    });
+    </script>
 </body>
-</html>

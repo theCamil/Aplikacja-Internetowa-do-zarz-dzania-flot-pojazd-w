@@ -17,7 +17,7 @@ body {
     justify-content: center;
     font-family: "Poppins", sans-serif;
 }
-.banner-wybor-ubezpieczenia{
+.banner{
     display: flex;
     height: 120vh;
     background: url(images/background7.jpg);
@@ -141,7 +141,7 @@ nav ul li div{
 .ubezpieczenie{
     color:#00aeae;
 }
-.okno-wybor-ubezpieczenia{
+.okno{
     width: 86%;
     height: 110%;
     max-width: 1920px;
@@ -160,7 +160,7 @@ h2{  /* Pozycja napisu 'tytul' */
     margin-left: 4.3vw;
     font-size: 2rem;
 }
-.tytul-wybor-ubezpieczenia{
+.tytul{
     color:#00aeae;
     -index: 9999999;
 }
@@ -210,7 +210,7 @@ th {
     font-size: 17px;
     height: 9vh;
 }
-.Tarcza-wybor-ubezpieczenia {
+.Tarcza {
     position: relative;
     top: 15%;
     left: -5%;

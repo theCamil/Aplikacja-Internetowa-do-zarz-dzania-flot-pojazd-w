@@ -17,7 +17,7 @@ body {
     justify-content: center;
     font-family: "Poppins", sans-serif;
 }
-.banner-twoje-dane{
+.banner{
     display: flex;
     height: 233vh;
     background: url(images/wall1.jpg);
@@ -141,7 +141,7 @@ nav ul li div{
 .dane{
     color:#00aeae;
 }
-.okno-twoje-dane{
+.okno{
     width: 100%;
     max-width: 1000px;
     background: rgba(0, 0, 0, 0.3);
@@ -156,37 +156,37 @@ h2{  /* Pozycja napisu 'tytul' */
     margin-left: 4vw;
     font-size: 2rem;
 }
-.tytul-twoje-dane{
+.tytul{
     color:#00aeae;
     -index: 9999999;
 }
-.h2-twoje-dane{  /* Pozycja napisu 'tytul' */
+.h2{  /* Pozycja napisu 'tytul' */
     position: relative;
     top: 10vh;
     color: #fff;
     margin-left: 4vw;
 }
-.tytul2-twoje-dane{
+.tytul2{
     color:#00aeae;
     -index: 9999999;
 }
-.h3-twoje-dane{  /* Pozycja napisu 'tytul' */
+.h3{  /* Pozycja napisu 'tytul' */
     position: relative;
     top: 7vh;
     color: #fff;
     margin-left: 4vw;
 }
-.tytul3-twoje-dane{
+.tytul3{
     color:#00aeae;
     -index: 9999999;
 }
-.h4-twoje-dane{  /* Pozycja napisu 'tytul' */
+.h4{  /* Pozycja napisu 'tytul' */
     position: relative;
     top: 13vh;
     color: #fff;
     margin-left: 4vw;
 }
-.tytul4-twoje-dane{
+.tytul4{
     color:#00aeae;
     -index: 9999999;
 }
@@ -205,8 +205,12 @@ button {
     right:0vw;
     z-index: 9999;
 }
-
-.info-twoje-dane{
+button:hover{
+    color:rgba(255, 255, 255, 1);
+    background-color: #00aeae;
+    background-position: -100% 100%;
+}
+.info{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -214,7 +218,7 @@ button {
     position: relative;
     padding: 0 5vw;
 }
-.info2-twoje-dane{
+.info2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -222,22 +226,22 @@ button {
     position: relative;
     padding: 0 5vw;
 }
-.dane-najemcy-twoje-dane:nth-child(2n){
+.dane-najemcy:nth-child(2n){
     justify-content: end;
 }
-.dane-najemcy-twoje-dane{
+.dane-najemcy{
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     padding-bottom: 20px;
     padding: 1vh 1vw;
 }
-.dane-najemcy-twoje-dane label{
+.dane-najemcy label{
     width: 95%;
     color: #fff;
     margin: 5px 5px;
 }
-.dane-najemcy-twoje-dane input{
+.dane-najemcy input{
     height: 35px;
     width: 97%;
     border-radius: 7px;
@@ -245,16 +249,16 @@ button {
     border: 1px solid #fff;
     padding: 0 10px;
 }
-.checkbox-twoje-dane {
+.checkbox {
     color:#00aeae;
     position: relative;
     left: 12%;
     margin-top: -13vh;
 }
-.firma-twoje-dane:nth-last-child(2n){
+.firma:nth-last-child(2n){
     justify-content: end;
 }
-.firma-twoje-dane{
+.firma{
     position: relative;
     top:1vh;
     color:#d9d9d9;
@@ -277,17 +281,17 @@ button {
 .Adress {
     display: none;
 }
-.linia-twoje-dane{
+.linia{
     width: 90%;
     top: 4vh;
     left: 5%;
     position: relative;
     border-bottom: solid 2px #00aeae;
 }
-.dane2-twoje-dane:nth-child(2n){
+.dane2:nth-child(2n){
     justify-content: end;
 }
-.dane2-twoje-dane{
+.dane2{
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
@@ -297,22 +301,22 @@ button {
     top:-1vh;
     padding: 12vh 5vw;
 }
-.dane2-twoje-dane label{
+.dane2 label{
     width: 95%;
     color: #fff;
     margin: 5px 5px;
 }
-.dane2-twoje-dane input{
+.dane2 input{
     height: 35px;
     width: 97%;
     border-radius: 7px;
     outline: none;
     padding: 0 10px;
 }
-.dane3-twoje-dane:nth-child(2n){
+.dane3:nth-child(2n){
     justify-content: end;
 }
-.dane3-twoje-dane{
+.dane3{
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
@@ -322,12 +326,12 @@ button {
     top:3vh;
     padding: 12vh 5vw;
 }
-.dane3-twoje-dane label{
+.dane3 label{
     width: 95%;
     color: #fff;
     margin: 5px 5px;
 }
-.dane3-twoje-dane input{
+.dane3 input{
     height: 35px;
     width: 97%;
     border-radius: 7px;
@@ -355,29 +359,29 @@ button:hover{
 .hidenext {
     visibility: hidden;
 }
-.info-2-twoje-dane{
+.info-2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     top:-30px;
     position: relative;
 }
-.dane-kierowcy-twoje-dane:nth-child(2n){
+.dane-kierowcy:nth-child(2n){
     justify-content: end;
 }
-.dane-kierowcy-twoje-dane{
+.dane-kierowcy{
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     padding-bottom: 20px;
     padding: 1vh 1vw;
 }
-.dane-kierowcy-twoje-dane label{
+.dane-kierowcy label{
     width: 95%;
     color: #fff;
     margin: 5px 5px;
 }
-.dane-kierowcy-twoje-dane input{
+.dane-kierowcy input{
     height: 35px;
     width: 97%;
     border-radius: 7px;

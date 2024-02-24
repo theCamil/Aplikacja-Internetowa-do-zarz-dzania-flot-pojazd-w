@@ -16,7 +16,7 @@ body{
     justify-content: center;
     font-family: "Poppins", sans-serif;
 }
-.banner-wybor-pojazdu{
+.banner{
     display: flex;
     height: 265vh;
     background: url(images/background7.jpg);
@@ -140,7 +140,7 @@ nav ul li div{
 .navbar2 ul li a:hover::after{
     transform: scaleX(1);
 }
-.okno-wybor-pojazdu{
+.okno{
     width: 85%;
     height: 255vh;
     max-width: 1920px;
@@ -155,10 +155,10 @@ h2{
     margin-left: 10.5vh;
     font-size: 2rem;
 }
-.tytul2-wybor-pojazdu{
+.tytul2{
     color: #00aeae;
 }
-.okienka-wybor-pojazdu{
+.okienka{
     top: 5vh;
     position: relative;
     display: flex;
@@ -167,7 +167,7 @@ h2{
     align-items: center;
     text-align: center;
 }
-.kaf1-wybor-pojazdu{
+.kaf1{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -175,11 +175,11 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.auto-wybor-pojazdu{
+.auto{
     display: flex;
     padding: 0 7vh;
 }
-.kaf2-wybor-pojazdu{
+.kaf2{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -188,7 +188,7 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.kaf3-wybor-pojazdu{
+.kaf3{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -196,7 +196,7 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.okienka2-wybor-pojazdu{
+.okienka2{
     top: 10vh;
     position: relative;
     justify-content: center;
@@ -204,7 +204,7 @@ h2{
     display: flex;
     text-align: center;
 }
-.kaf4-wybor-pojazdu{
+.kaf4{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -212,7 +212,7 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.kaf5-wybor-pojazdu{
+.kaf5{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -221,7 +221,7 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.kaf6-wybor-pojazdu{
+.kaf6{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -229,7 +229,7 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.okienka3-wybor-pojazdu{
+.okienka3{
     top: 15vh;
     position: relative;
     justify-content: center;
@@ -237,7 +237,7 @@ h2{
     display: flex;
     text-align: center;
 }
-.kaf7-wybor-pojazdu{
+.kaf7{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -245,7 +245,7 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.kaf8-wybor-pojazdu{
+.kaf8{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -254,7 +254,7 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.kaf9-wybor-pojazdu{
+.kaf9{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -262,7 +262,7 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.okienka4-wybor-pojazdu{
+.okienka4{
     top: 20vh;
     position: relative;
     justify-content: center;
@@ -270,7 +270,7 @@ h2{
     display: flex;
     text-align: center;
 }
-.kaf10-wybor-pojazdu{
+.kaf10{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -278,7 +278,7 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.kaf11-wybor-pojazdu{
+.kaf11{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -287,7 +287,7 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.kaf12-wybor-pojazdu{
+.kaf12{
     display: flex;
     width: 45vh;
     height: 55vh;
@@ -295,16 +295,16 @@ h2{
     flex-direction: column;
     border-radius: 5px;
 }
-.opis-wybor-pojazdu{
+.opis{
     position: relative;
     color: #4d4d4d;
     margin-top: 3vh;
 }
-.naglowek-wybor-pojazdu{
+.naglowek{
     color: #000;
     font-size: 1.5rem;
 }
-.opisdol-wybor-pojazdu{
+.opisdol{
     display: flex;
     position: relative;
     justify-content: center;
@@ -312,32 +312,32 @@ h2{
     color: #00aeae;
     font-size: 1.3rem;
 }
-.auto-wybor-pojazdu{
+.auto{
     margin-top: 2vh;
 }
-.linia-wybor-pojazdu{
+.linia{
     width: 90%;
     left: 5%;
     position: relative;
     border-bottom: solid 1px #00aeae;
     top: 3vh;
 }
-.stawki-wybor-pojazdu{
+.stawki{
     display: flex;
     position: relative;
     justify-content: center;
     padding: 0 1vh;
     margin-top: 4.5vh;
 }
-.stawka-dobowa-wybor-pojazdu{
+.stawka-dobowa{
     font-size: 1.1rem;
     color: #4d4d4d;
 }
-.cena-wybor-pojazdu{
+.cena{
     font-size: 1.5rem;
     margin-left: 2.5vh;
 }
-.wybierz-wybor-pojazdu{
+.wybierz{
     width: 21.85vw;
     height: 5vh;
     margin-top: 1.7vh;
@@ -349,14 +349,14 @@ h2{
     font-size: 1.5rem;
     border-radius: 5px;
 }
-.tabela-wybor-pojazdu{
+table{
     width: 100%;
     height: 7vh;
     position: relative;
     justify-content: center;
     border-collapse: separate;
 }
-.tabela-wybor-pojazdu tr td{
+table tr td{
     padding: 1.5vh 0vh;
 }
 label{
@@ -382,7 +382,7 @@ input[type="radio"] {
     cursor: pointer;
     border-radius: 5px;
 }
-td.selected-column {
+.selected-column {
     background-color: #00aeae35;
     border-radius: 5px;   
 }

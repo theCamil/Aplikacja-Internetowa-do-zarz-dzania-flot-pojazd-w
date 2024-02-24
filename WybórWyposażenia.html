@@ -45,47 +45,98 @@
             </ul>
         </nav>
     </header>
-    <Section class="banner-wybor-wyposazenie" id="banner">
-        <div class="okno-wybor-wyposazenie">
-            <h2><a class="tytul-wybor-wyposazenie">Wyposażenie</a> Samochodu</h2>
-            <div class="miniOkno1-wybor-wyposazenie">
-               <input type="checkbox"  class="opcja1-wybor-wyposazenie" id="opcja1"><label class="wybierz1-wybor-wyposazenie" for="opcja1">Dodaj</label>
-                <p class="OpisOpcji-wybor-wyposazenie"><span style="color: #00aeae;font-size: 20px;">Zezwolenie transgraniczne (NPL)</span><br>
+    <Section class="banner" id="banner">
+        <div class="okno">
+            <h2><a class="tytul">Wyposażenie</a> Samochodu</h2>
+            <div class="miniOkno1">
+               <input type="checkbox"  class="opcja1" id="opcja1"><label class="wybierz1" for="opcja1">Dodaj</label>
+               <img src="images/iconizer-reshot-icon-vacation-CQ9FNDBLVE 1.png" class="ikona" id="ikona2">
+                <p class="OpisOpcji"><span style="color: #00aeae;font-size: 20px;">Zezwolenie transgraniczne (NPL)</span><br>
                      Jeżeli planujesz podróż poza granice kraju, musisz wybrać opłatę za przekroczenie granicy.
                       Pojazdy posiadają terytorialną ważność ubezpieczenia w Europie. 
                      Dotyczy wyjazdu do krajów graniczących z Polską na terenie Unii Europejskiej.
-                </p>                       
+                </p>
+                <div type="text" class="kosztopcji4" id="kosztopcji4">
+                    <label type="text" class="Cena4">80,99 EUR</label></div>                    
             </div>
-            <div class="miniOkno2-wybor-wyposazenie">
-                <input type="checkbox" class="opcja2-wybor-wyposazenie" id="opcja2"><label class="wybierz2-wybor-wyposazenie" for="opcja2">Dodaj</label>
-                <p class="OpisOpcji-wybor-wyposazenie"><span style="color: #00aeae;font-size: 20px;">Zezwolenie transgraniczne (FFPL)</span><br>
+            <div class="miniOkno2">
+                <input type="checkbox" class="opcja2" id="opcja2"><label class="wybierz2" for="opcja2">Dodaj</label>
+                <img src="images/iconizer-reshot-icon-vacation-CQ9FNDBLVE 1.png" class="ikona" id="ikona2">
+                <p class="OpisOpcji"><span style="color: #00aeae;font-size: 20px;">Zezwolenie transgraniczne (FFPL)</span><br>
                     Jeżeli planujesz podróż poza granice kraju, musisz wybrać opłatę za przekroczenie granicy.
                      Pojazdy posiadają terytorialną ważność ubezpieczenia w Europie. 
                      Dotyczy wyjazdu do krajów na terenie Unii Europejskiej.
                </p>
+               <div type="text" class="kosztopcji4" id="kosztopcji4">
+                <label type="text" class="Cena4">154,50 EUR</label></div>
             </div>
-            <div class="miniOkno3-wybor-wyposazenie">
-                <input type="checkbox" class="opcja3-wybor-wyposazenie" id="opcja3"><label class="wybierz3-wybor-wyposazenie" for="opcja3">Dodaj</label>
-                <p class="OpisOpcji-wybor-wyposazenie"><span style="color: #00aeae;font-size: 20px;">Dodatkowy kierowca</span><br>
+            <div class="miniOkno3">
+                <input type="checkbox" class="opcja3" id="opcja3"><label class="wybierz3" for="opcja3">Dodaj</label>
+                <img src="images/iconizer-reshot-icon-users-E3JSNABQH2 1.png" class="ikona" id="ikona3">
+                <p class="OpisOpcji"><span style="color: #00aeae;font-size: 20px;">Dodatkowy kierowca</span><br>
                     Dwoje to zawsze lepiej niż jeden.
                     Możesz zapewnić sobie beztroskie wakacje, 
                     pełne relaksu dodając kolejnego kierowcę do swojej rezerwacji i nie pozostawiając niczego przypadkowi.
                </p>
+               <div type="text" class="kosztopcji4" id="kosztopcji4">
+                <label type="text" class="Cena4">16,30 EUR</label></div>
             </div>
-            <div class="miniOkno4-wybor-wyposazenie">
-                <input type="checkbox" class="opcja4-wybor-wyposazenie" id="opcja4"><label class="wybierz4-wybor-wyposazenie" for="opcja4">Dodaj</label>
-                <p class="OpisOpcji-wybor-wyposazenie"><span style="color: #00aeae;font-size: 20px;">Nawigacja satelitarna GPS</span><br>
+            <div class="miniOkno4">
+                <input type="checkbox" class="opcja4" id="opcja4"><label class="wybierz4" for="opcja4">Dodaj</label>
+                <img src="images/iconizer-reshot-icon-destination-NDVM5LGC7K 1.png" class="ikona" id="ikona4">
+                <p class="OpisOpcji"><span style="color: #00aeae;font-size: 20px;">Nawigacja satelitarna GPS</span><br>
                     Jeżeli chcesz dojechać na czas do wybranego miejsca i jak najpełniej wykorzystać swój czas,
                      możesz wypożyczyć naszą nawigacje i zapewnić sobie wysokiej jakości przewodnika na swoje wakacje. 
                </p>
+               <div type="text" class="kosztopcji4" id="kosztopcji4">
+               <label type="text" class="Cena4">29,00 EUR</label></div>
             </div>
             
             
-            <button onclick="location.href = 'TwojeDane.html';">Dalej</button>
+            <button onclick="location.href ='TwojeDane.html'">Dalej</button>
         </div>
         
        
     </Section>
-    
+    <script>
+        // Function to handle checkbox changes
+        function handleCheckboxChange() {
+             var totalPrice = 0;
+
+            // Check if checkbox 1 is checked
+            if (document.getElementById('opcja1').checked) {
+                var cena1 = document.querySelector('.miniOkno1 .Cena4').textContent;
+                totalPrice += parseFloat(cena1);
+            }
+
+            // Check if checkbox 2 is checked
+            if (document.getElementById('opcja2').checked) {
+                var cena2 = document.querySelector('.miniOkno2 .Cena4').textContent;
+                totalPrice += parseFloat(cena2);
+            }
+
+            // Check if checkbox 3 is checked
+            if (document.getElementById('opcja3').checked) {
+                var cena3 = document.querySelector('.miniOkno3 .Cena4').textContent;
+                totalPrice += parseFloat(cena3);
+            }
+
+            // Check if checkbox 4 is checked
+            if (document.getElementById('opcja4').checked) {
+                var cena4 = document.querySelector('.miniOkno4 .Cena4').textContent;
+                totalPrice += parseFloat(cena4);
+            }
+
+            // Update the total price on the page
+            document.getElementById('totalPrice').textContent = totalPrice.toFixed(2); // Display total price with 2 decimal places
+}
+
+        // Attach change event listeners to checkboxes
+        document.getElementById('opcja1').addEventListener('change', handleCheckboxChange);
+        document.getElementById('opcja2').addEventListener('change', handleCheckboxChange);
+        document.getElementById('opcja3').addEventListener('change', handleCheckboxChange);
+        document.getElementById('opcja4').addEventListener('change', handleCheckboxChange);
+
+
+    </script>
 </body>
-</html>

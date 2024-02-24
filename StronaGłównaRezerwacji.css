@@ -16,7 +16,7 @@ body{
     justify-content: center;
     font-family: "Poppins", sans-serif;
 }
-.banner-glowna-rezerwacji{
+.banner{
     display: flex;
     width: 100%;
     height: 805px;
@@ -38,7 +38,7 @@ body{
     position: sticky;
     z-index: 1;
 }
-.one .two-glowna-rezerwacji{
+.one .two{
     position: fixed;
 }
 nav{
@@ -98,7 +98,7 @@ nav ul li div{
 .User .boxuser{
     display: flex;
 }
-.two-glowna-rezerwacji{ /* gray Bar above image */
+.two{ /* gray Bar above image */
     position: sticky;
     left:0;
     top: 0;
@@ -108,19 +108,19 @@ nav ul li div{
 	background:#1f2020;
     z-index: 2;
 }
-.navbar2-glowna-rezerwacji{
+.navbar2{
     display: flex;
     margin:auto;
 }
-.navbar2-glowna-rezerwacji ul{
+.navbar2 ul{
     display: flex;
 }
-.navbar2-glowna-rezerwacji ul li a{
+.navbar2 ul li a{
     text-decoration: none;
     color: #d9d9d9;
     position: relative;    
 }
-.navbar2-glowna-rezerwacji ul li a::after{
+.navbar2 ul li a::after{
     content: "";
     position: absolute;
     background-color: #00aeae;
@@ -132,27 +132,27 @@ nav ul li div{
     transition-timing-function: ease-in-out;
     transform: scaleX(0);
 }
-.navbar2-glowna-rezerwacji ul li a:hover{
+.navbar2 ul li a:hover{
     color:#d9d9d9;
 }
-.navbar2-glowna-rezerwacji ul li a:hover::after{
+.navbar2 ul li a:hover::after{
     transform: scaleX(1);
 }
-.slider-glowna-rezerwacji {
+.slider {
     position: relative;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     overflow: hidden;
 }
-.slides-glowna-rezerwacji{
+.slides{
   display: flex;
   width: 9603px;
   z-index: 1;
 }
-.slides-glowna-rezerwacji input{
+.slides input{
     display: none;
 }
-.slide-glowna-rezerwacji{
+.slide{
     transition: 2s;
 }
 #radio1:checked ~ .first{
@@ -173,41 +173,41 @@ nav ul li div{
 #radio6:checked ~ .first{
     margin-left: -100%;
 }
-.navigation-auto-glowna-rezerwacji{
+.navigation-auto{
     position: absolute;
     display: flex;
     width: 100%;
     justify-content: center;
     top: 80vh;
 }
-.navigation-auto-glowna-rezerwacji div{
+.navigation-auto div{
     border: 2px solid #00aeae;
     padding: 4px;
     border-radius: 10px;
     transition: 1s;
 }
-.navigation-auto-glowna-rezerwacji div:not(:last-child){
+.navigation-auto div:not(:last-child){
     margin-right: 20px;
 }
-#radio1:checked ~ .navigation-auto-glowna-rezerwacji .auto-btn1-glowna-rezerwacji{
+#radio1:checked ~ .navigation-auto .auto-btn1{
     background: #00aeae;
 }
-#radio2:checked ~ .navigation-auto-glowna-rezerwacji .auto-btn2-glowna-rezerwacji{
+#radio2:checked ~ .navigation-auto .auto-btn2{
     background: #00aeae;
 }
-#radio3:checked ~ .navigation-auto-glowna-rezerwacji .auto-btn3-glowna-rezerwacji{
+#radio3:checked ~ .navigation-auto .auto-btn3{
     background: #00aeae;
 }
-#radio4:checked ~ .navigation-auto-glowna-rezerwacji .auto-btn4-glowna-rezerwacji{
+#radio4:checked ~ .navigation-auto .auto-btn4{
     background: #00aeae;
 }
-#radio5:checked ~ .navigation-auto-glowna-rezerwacji .auto-btn5-glowna-rezerwacji{
+#radio5:checked ~ .navigation-auto .auto-btn5{
     background: #00aeae;
 }
-#radio6:checked ~ .navigation-auto-glowna-rezerwacji .auto-btn6-glowna-rezerwacji{
+#radio6:checked ~ .navigation-auto .auto-btn6{
     background: #00aeae;
 }
-.okno-glowna-rezerwacji{
+.okno{
     width: 80%;
     height: 25vh;
     background: rgba(0, 0, 0, 0.3);
@@ -225,7 +225,7 @@ h2{
     top:-70px;
     font-size: 2rem;
 }
-.tytul-glowna-rezerwacji{
+.tytul{
     text-align: left;
     color:#fff;
     top: 1vh;
@@ -256,7 +256,7 @@ h2{
 .GodzinaZwrotu {
     position: absolute;
     color: #fff;
-    
+    left: 41vw;
     top: 7vh;
 }
 .Gdzie {
@@ -289,13 +289,14 @@ h2{
 .słowoZwrot {
     color: #fff;
     position: absolute;
-    
+    left: 19.5vw;
     top: 7vh;
 }
 .słowoMiejsce {
     color: #fff;
     position: absolute;
     top: 7vh;
+    left: 11.5vw;
 }
 input[type="datetime-local"]{
     background-color: #fff;
@@ -372,7 +373,7 @@ button:hover{
     background-color: #00aeae;
     background-position: -100% 100%;
 }
-.checkbox-glowna-rezerwacji {
+.checkbox {
     color:#fff;
     position: absolute;
     top: 16vh;
@@ -381,6 +382,6 @@ button:hover{
     float: right;
     z-index: 6;
 }
-.nowa-glowna-rezerwacji{
+.nowa{
     color: #00aeae;
 }

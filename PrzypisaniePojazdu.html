@@ -59,37 +59,41 @@
             navBar2.classList.toggle("active");
         }
     </script>
-    <section class="przypisanie-przypisaniePojazdu">
-        <div class="okno2-przypisaniePojazdu">
-            <div class="scroll-przypisaniePojazdu">
-                <div class="akapit-przypisaniePojazdu"><a class=tekstakapit-przypisaniePojazdu>Przypisanie pojazdu</a></div>
-                <form action="" class="searchbar-przypisaniePojazdu">
+    <section class="przypisanie">
+        <div class="okno2">
+            <div class="scroll">
+                <div class="akapit"><a class=tekstakapit>Przypisanie pojazdu</a></div>
+                <form action="" class="searchbar">
                     <input type="text" placeholder=" Wyszukaj...">
                     <button type="submit"><img src="images/search2.png" alt=""></button>
                 </form>
-                <div class="navinfo-przypisaniePojazdu">
-                    <table class="tabela1-przypisaniePojazdu">
-                        <tr class="tr-przypisaniePojazdu"><td class="a1-przypisaniePojazdu">Nr rejestracji</td><td class="a2-przypisaniePojazdu">Oddział</td><td class="a3-przypisaniePojazdu">Nadwozie</td><td class="a4-przypisaniePojazdu">Marka/Model</td><td class="a5-przypisaniePojazdu">Seg.</td><td><button class="choice1-przypisaniePojazdu" type="submit">Wybierz<a href="PrzypisanieAuto.html"></a></td></tr>
+                <div class="navinfo">
+                    <table class="tabela1">
+                        <tr class="tr"><td class="a1">Nr rejestracji</td><td class="a2">Oddział</td><td class="a3">Nadwozie</td><td class="a4">Marka/Model</td><td class="a5">Seg.</td><td><button class="choice1" type="submit">Wybierz<a href="PrzypisanieAuto.html"></a></td></tr>
                     </table>
                 </div>
-                <div class="scrollbox-przypisaniePojazdu">
+                <div class="scrollbox">
                     <table>
-                        <tr><td>KK2879W</td><td>Katowice</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
-                        <tr><td>WW10D97</td><td>warszawa</td><td>Suv</td><td>BMW X5</td><td>D</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
-                        <tr><td>KKL80W2</td><td>Warszawa</td><td>Combi</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
-                        <tr><td>POLK873</td><td>Katowice</td><td>Sedan</td><td>Toyota Camry</td><td>E</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
-                        <tr><td>KKM897W</td><td>Katowice</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
-                        <tr><td>KK5279A</td><td>Opole</td><td>Compact</td><td>Kia Ceed</td><td>B</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
-                        <tr><td>WW89K21</td><td>Katowice</td><td>Van</td><td>Toyota ProAce</td><td>F</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
-                        <tr><td>KK902ML</td><td>Kraków</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
-                        <tr><td>KKM98L21</td><td>Kraków</td><td>Sedan</td><td>BMW Serii 3</td><td>C</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
-                        <tr><td>WW4TR35</td><td>Katowice</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
-                        <tr><td>KK430BW</td><td>Katowice</td><td>Compact</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz-przypisaniePojazdu" href="PrzypisanieAuto.html"><button class="choice-przypisaniePojazdu" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KK2879W</td><td>Katowice</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><button class="choice"  onclick="selectCar('car1')">Wybierz</td></tr>
+                        <tr><td>WW10D97</td><td>Warszawa</td><td>Suv</td><td>BMW X5</td><td>D</td><td><button class="choice"  onclick="selectCar('car2')">Wybierz</td></tr>
+                        <tr><td>KKL80W2</td><td>Warszawa</td><td>Combi</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz" href="PrzypisanieAuto.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>POLK873</td><td>Katowice</td><td>Sedan</td><td>Toyota Camry</td><td>E</td><td><a class="wybierz" href="PrzypisanieAuto.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KKM897W</td><td>Katowice</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz" href="PrzypisanieAuto.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KK5279A</td><td>Opole</td><td>Compact</td><td>Kia Ceed</td><td>B</td><td><a class="wybierz" href="PrzypisanieAuto.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>WW89K21</td><td>Katowice</td><td>Van</td><td>Toyota ProAce</td><td>F</td><td><a class="wybierz" href="PrzypisanieAuto.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KK902ML</td><td>Kraków</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz" href="PrzypisanieAuto.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KKM98L21</td><td>Kraków</td><td>Sedan</td><td>BMW Serii 3</td><td>C</td><td><a class="wybierz" href="PrzypisanieAuto.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>WW4TR35</td><td>Katowice</td><td>Sedan</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz" href="PrzypisanieAuto.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
+                        <tr><td>KK430BW</td><td>Katowice</td><td>Compact</td><td>Toyota Corolla</td><td>C</td><td><a class="wybierz" href="PrzypisanieAuto.html"><button class="choice" type="submit">Wybierz</button></a></td></tr>
                     </table>
                         
                 </div>
             </div>
         </div>
+        <script>
+            function selectCar(carType) {
+                window.location.href = 'PrzypisanieAuto.html?car=' + carType;
+            }
+        </script>
     </section>
 </body> 
-</html>
